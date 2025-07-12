@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نورسينا - منصة الاستثمار المالي الرائدة</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- البريلودر -->
+    <div class="preloader">
+        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">جاري التحميل...</div>
+        <div class="preloader-progress">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- رأس السايد بار للشاشات الصغيرة -->
+                <div class="sidebar-header d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+                    </a>
+                    <div class="sidebar-close" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-dropdown" href="javascript:void(0);" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">عن الشركة <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="affiliate.html">التسويق بالعمولة</a></li>
+                            <li><a class="dropdown-item" href="contract.html">عقد الاستثمار</a></li>
+                            <li><a class="dropdown-item" href="license.html">ترخيص الشركة</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">أراء العملاء</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-to-start.html">كيف أبدأ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investment-plans.html">باقات الإستثمار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment-methods.html">طرق الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">أسئلة شائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-gold-outline me-2">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-gold">إنشاء حساب</a>
+                </div>
+            </div>
+            <!-- طبقة التظليل للسايد بار -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </div>
+    </nav>
+
+    <!-- بانر الصفحة -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>نحن هنا للمساعدة تواصل معنا</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">اتصل بنا</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم أحدث المعاملات -->
+    <section class="section transactions-section" id="transactions">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">سجل العمليات</h6>
+                <h2 class="section-title">أحدث المعاملات</h2>
+                <p class="section-description">استعرض أحدث المعاملات التي تمت عبر منصتنا بشفافية كاملة</p>
+            </div>
+            <div class="table-responsive">
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>اسم المستخدم</th>
+                            <th>التاريخ</th>
+                            <th>المبلغ</th>
+                            <th>التفاصيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="user-id">NS800380809</span></td>
+                            <td><span class="date">2025-06-29 11:30 م</span></td>
+                            <td><span class="amount-investment">+ $100.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS800380809</span></td>
+                            <td><span class="date">2025-06-29 11:30 م</span></td>
+                            <td><span class="amount-positive">+ $100.00</span></td>
+                            <td><span class="details">إيداع بواسطة بنك Payeer</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS026649695</span></td>
+                            <td><span class="date">2025-06-29 08:13 م</span></td>
+                            <td><span class="amount-negative">- $20.00</span></td>
+                            <td><span class="details">19.00 USDT سحب بواسطة USDT TRC20</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS640728461</span></td>
+                            <td><span class="date">2025-06-29 08:13 م</span></td>
+                            <td><span class="amount-investment">+ $100.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS640728461</span></td>
+                            <td><span class="date">2025-06-29 08:12 م</span></td>
+                            <td><span class="amount-positive">+ $100.00</span></td>
+                            <td><span class="details">إيداع بواسطة USDT TRC20</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS026649695</span></td>
+                            <td><span class="date">2025-06-29 06:24 م</span></td>
+                            <td><span class="amount-negative">- $30.00</span></td>
+                            <td><span class="details">28.50 $ سحب بواسطة بنك Payeer</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS259271860</span></td>
+                            <td><span class="date">2025-06-29 06:23 م</span></td>
+                            <td><span class="amount-investment">+ $100.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS259271860</span></td>
+                            <td><span class="date">2025-06-29 06:23 م</span></td>
+                            <td><span class="amount-positive">+ $100.00</span></td>
+                            <td><span class="details">إيداع بواسطة بنك Payeer</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS921859856</span></td>
+                            <td><span class="date">2025-06-29 06:22 م</span></td>
+                            <td><span class="amount-investment">+ $450.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS270000662</span></td>
+                            <td><span class="date">2025-06-29 06:22 م</span></td>
+                            <td><span class="amount-positive">+ $450.00</span></td>
+                            <td><span class="details">إيداع بواسطة USDT TRC20</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- بطاقات المعاملات للشاشات الصغيرة -->
+            <div class="transaction-cards">
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS800380809</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 11:30 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS800380809</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 11:30 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة بنك Payeer</div>
+                </div>
+                
+                <div class="transaction-card withdrawal">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS026649695</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 08:13 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-negative">- $20.00</div>
+                    </div>
+                    <div class="card-details">19.00 USDT سحب بواسطة USDT TRC20</div>
+                </div>
+                
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS640728461</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 08:13 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS640728461</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 08:12 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة USDT TRC20</div>
+                </div>
+                
+                <div class="transaction-card withdrawal">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS026649695</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:24 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-negative">- $30.00</div>
+                    </div>
+                    <div class="card-details">28.50 $ سحب بواسطة بنك Payeer</div>
+                </div>
+                
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS259271860</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:23 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS259271860</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:23 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة بنك Payeer</div>
+                </div>
+                
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS921859856</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:22 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $450.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS270000662</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:22 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $450.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة USDT TRC20</div>
+                </div>
+            </div>
+
+            <div class="transaction-badges">
+                <a class="transaction-badge" href="top-investors.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أفضل المستثمرين</h4>
+                        <p>تعرف على أفضل المستثمرين</p>
+                    </div>
+                </a>
+                <a class="transaction-badge" href="latest-deposits.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أحدث عمليات الإيداع</h4>
+                        <p>استعرض أحدث الإيداعات</p>
+                    </div>
+                </a>
+                <a class="transaction-badge" href="latest-withdrawals.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أحدث عمليات السحب</h4>
+                        <p>تتبع أحدث طلبات السحب</p>
+                    </div>
+                </a>
+                <a class="transaction-badge" href="latest-referrals.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أحدث عمليات الإحالة</h4>
+                        <p>اكتشف أحدث الإحالات</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- العمود الأول - كما هو -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-about">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="footer-logo">
+                        </a>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني - روابط سريعة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="affiliate.html">التسويق بالعمولة</a></li>
+                        <li><a href="investment-plans.html">باقات الاستثمار</a></li>
+                        <li><a href="payment-methods.html">طرق الدفع</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الثالث - الدعم والمساعدة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">الدعم والمساعدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الرابع - معاملات مالية -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">معاملات مالية</h4>
+                    <ul class="footer-links">
+                        <li><a href="top-investors.html">أفضل المستثمرين</a></li>
+                        <li><a href="latest-withdrawals.html">أخر عمليات السحب</a></li>
+                        <li><a href="latest-deposits.html">أخر عمليات الإيداع</a></li>
+                        <li><a href="latest-referrals.html">أخر عمليات الإحالة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الخامس - اتصل بنا -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span dir="ltr">18 Shacklewell Lane, London, England, E8 2EZ</span></li>
+                        <li><i class="fas fa-envelope"></i> info@noorsena.com</li>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+44 7366 499 420</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">© 2025 نورسينا للاستثمار المالي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

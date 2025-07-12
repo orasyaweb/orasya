@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عقد الاستثمار - نورسينا للاستثمار المالي</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Font Awesome CDN Backup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- البريلودر -->
+    <div class="preloader">
+        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">جاري التحميل...</div>
+        <div class="preloader-progress">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- رأس السايد بار للشاشات الصغيرة -->
+                <div class="sidebar-header d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+                    </a>
+                    <div class="sidebar-close" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-dropdown active" href="javascript:void(0);" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">عن الشركة <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="affiliate.html">التسويق بالعمولة</a></li>
+                            <li><a class="dropdown-item active" href="contract.html">عقد الاستثمار</a></li>
+                            <li><a class="dropdown-item" href="license.html">ترخيص الشركة</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">أراء العملاء</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-to-start.html">كيف أبدأ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investment-plans.html">باقات الإستثمار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment-methods.html">طرق الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">أسئلة شائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-gold-outline me-2">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-gold">إنشاء حساب</a>
+                </div>
+            </div>
+            <!-- طبقة التظليل للسايد بار -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </div>
+    </nav>
+
+    <!-- بانر الصفحة -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>عقد الاستثمار</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">عقد الاستثمار</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الأول - عقد الاستثمار الرئيسي -->
+    <section class="section">
+        <div class="container">
+            <!-- العنوان والبطاقات في الوسط -->
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">الشفافية والثقة</h6>
+                <h2 class="section-title">عقد استثمار قانوني يحمي حقوقك</h2>
+                <p class="section-description">نؤمن في نورسينا بأن الشفافية والوضوح هما أساس الثقة، لذلك نقدم عقد استثمار قانوني شامل يوضح كافة الحقوق والالتزامات لكلا الطرفين.</p>
+            </div>
+            
+            <!-- البطاقات في الوسط -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="contract-step-card">
+                        <div class="contract-step-header">
+                            <div class="contract-step-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>حماية قانونية</h4>
+                        </div>
+                        <div class="contract-step-content">
+                            <p>عقد قانوني ملزم يحمي استثمارك ويضمن حقوقك المالية بشكل كامل.</p>
+                            <div class="contract-step-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>حماية شاملة لاستثمارك</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="contract-step-card">
+                        <div class="contract-step-header">
+                            <div class="contract-step-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>توثيق إلكتروني</h4>
+                        </div>
+                        <div class="contract-step-content">
+                            <p>عقد موثق ومختوم إلكترونياً بما يتوافق مع أحدث معايير التوثيق الرقمي.</p>
+                            <div class="contract-step-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>معايير التوثيق الحديثة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="contract-step-card">
+                        <div class="contract-step-header">
+                            <div class="contract-step-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h4>شروط واضحة</h4>
+                        </div>
+                        <div class="contract-step-content">
+                            <p>شروط وأحكام مفصلة وواضحة تحدد كافة جوانب العلاقة الاستثمارية.</p>
+                            <div class="contract-step-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>وضوح كامل في الشروط</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- القسم الثاني - النص التوضيحي مقابل نموذج العقد -->
+            <div class="row align-items-center mt-5">
+                <!-- القسم النصي التوضيحي - على اليمين أولاً -->
+                <div class="col-lg-6">
+                    <div class="text-content">
+                        <h4 class="mb-3">لماذا نقدم عقد استثمار قانوني؟</h4>
+                        <p class="mb-3">في عالم الاستثمار الرقمي، تعتبر الثقة والشفافية من أهم العوامل التي يبحث عنها المستثمرون. لذلك، تلتزم منصة نورسينا بتقديم عقد استثمار قانوني شامل يوضح كافة الحقوق والالتزامات لكلا الطرفين.</p>
+                        <p class="mb-3">يتميز عقد الاستثمار لدينا بأنه معد من قبل خبراء قانونيين متخصصين في مجال الاستثمارات الرقمية، ويتوافق مع كافة المعايير والتشريعات الدولية المنظمة لهذا المجال.</p>
+                        <p>من خلال هذا العقد، نضمن لك حماية كاملة لاستثمارك، ونوفر لك الأمان والثقة التي تحتاجها لاتخاذ قرار الاستثمار مع منصتنا.</p>
+                    </div>
+                </div>
+                
+                <!-- القسم المرئي - نموذج العقد -->
+                <div class="col-lg-6">
+                    <div class="contract-preview">
+                        <div class="contract-document">
+                            <div class="contract-header">
+                                <div class="contract-title-section">
+                                    <h3>عقد استثمار</h3>
+                                    <div class="contract-date">📅 تاريخ الإصدار: [التاريخ]</div>
+                                </div>
+                                <div class="contract-logo-section">
+                                    <div class="logo-circle-main"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="contract-body">
+                                <div class="contract-lines-group">
+                                    <div class="contract-line full"></div>
+                                    <div class="contract-line full"></div>
+                                    <div class="contract-line medium"></div>
+                                    <div class="contract-line full"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="contract-footer">
+                                <div class="footer-left">
+                                    <div class="signature-badge">رسمي</div>
+                                    <div class="signature-text">موقع إلكترونياً</div>
+                                </div>
+                                <div class="footer-right">
+                                    <div class="official-stamp">
+                                        <div class="stamp-circle">
+                                            <div class="stamp-text">تصديق رسمي</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- أيقونات الحالة في الأسفل -->
+                            <div class="contract-status">
+                                <div class="status-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>آمن</span>
+                                </div>
+                                <div class="status-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>معي</span>
+                                </div>
+                                <div class="status-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>مصدق</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الثاني - كيف تحصل على عقد الاستثمار -->
+    <section class="section" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">خطوات بسيطة</h6>
+                <h2 class="section-title">كيف تحصل على عقد الاستثمار؟</h2>
+                <p class="section-description">الحصول على عقد الاستثمار مع منصة نورسينا عملية سهلة وسريعة:</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- الخطوة 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="contract-step-card">
+                        <div class="contract-step-header">
+                            <div class="contract-step-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <h4>اختيار الباقة</h4>
+                        </div>
+                        <div class="contract-step-content">
+                            <p>اختر باقة الاستثمار المناسبة لك من بين مجموعة متنوعة من الخيارات وأكمل عملية الاستثمار بخطوات بسيطة.</p>
+                            <div class="contract-step-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>باقات متنوعة تناسب جميع المستثمرين</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="contract-step-card">
+                        <div class="contract-step-header">
+                            <div class="contract-step-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>استلام العقد</h4>
+                        </div>
+                        <div class="contract-step-content">
+                            <p>بعد اكتمال عملية الاستثمار، سيتم إرسال نسخة كاملة من العقد إلى بريدك الإلكتروني المسجل خلال 48 ساعة.</p>
+                            <div class="contract-step-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>عقد قانوني موثق ومصدق</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="contract-step-card">
+                        <div class="contract-step-header">
+                            <div class="contract-step-icon">
+                                <i class="fas fa-archive"></i>
+                            </div>
+                            <h4>احتفظ بالعقد</h4>
+                        </div>
+                        <div class="contract-step-content">
+                            <p>احتفظ بنسخة من العقد المرسل إلى بريدك الإلكتروني في مكان آمن للرجوع إليه عند الحاجة وكدليل على استثمارك.</p>
+                            <div class="contract-step-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>حماية قانونية كاملة لاستثمارك</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- تنويه هام -->
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="alert alert-warning" role="alert">
+                        <div class="alert-header">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <strong>تنبيه هام</strong>
+                        </div>
+                        <h5>شرط إرسال عقد الاستثمار</h5>
+                        <p class="mb-0">يرجى العلم بأن إرسال عقد الاستثمار يتم فقط للحسابات التي أكملت عملية التحقق من الهوية بنجاح. الحسابات غير المكتملة التحقق لن تتمكن من استلام أي عقود استثمارية حتى إتمام عملية التحقق وفقاً للوائح التنظيمية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الثالث - تحميل نسخة تجريبية -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- القسم النصي - الجانب الأيمن (يظهر أولاً في HTML) -->
+                <div class="col-lg-6 order-lg-1 order-1">
+                    <div class="text-content text-right">
+                        <div class="section-heading text-right">
+                            <h6 class="sub-heading">عقد الاستثمار</h6>
+                            <h2 class="section-title">الضمان القانوني لاستثمارك</h2>
+                        </div>
+                        
+                        <div class="contract-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <p>يتم إرسال نسخة كاملة من العقد إلى بريدك الإلكتروني المسجل خلال 48 ساعة كحد أقصى من تنشيط الاستثمار.</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-file-alt"></i>
+                                <p>مع كل عملية استثمار جديدة تحصل على عقد استثمار جديد مرسل إلى بريدك الإلكتروني.</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-globe"></i>
+                                <p>موثق ومعتمد قانونياً بما يتوافق مع المعاير الدولية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- القسم التفاعلي - الجانب الأيسر (يظهر ثانياً في HTML) -->
+                <div class="col-lg-6 order-lg-2 order-2">
+                    <div class="contract-download-section">
+                        <div class="download-visual-card">
+                            <div class="download-header">
+                                <h4>تحميل نسخة تجريبية من العقد</h4>
+                            </div>
+                            
+                            <div class="download-content">
+                                <p>يمكنك الآن تحميل نسخة تجريبية من عقد الاستثمار للاطلاع على محتوياته قبل البدء في الاستثمار</p>
+                                
+                                <div class="download-note">
+                                    <div class="note-content">
+                                        <p>هذه النسخة مخصصة للعرض فقط وليست العقد النهائي. العقد النهائي سيحتوي على بياناتك الشخصية وتفاصيل استثمارك الدقيقة</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="download-features">
+                                    <h5>عرض نسخة تجريبية</h5>
+                                    <p>تحتوي النسخة التجريبية على نفس البنود القانونية والشروط المالية المتضمنة في العقد الرسمي، ويمكنك عرضها بصيغة PDF أو طباعتها للاطلاع</p>
+                                </div>
+                                
+                                <div class="download-action">
+                                    <a href="assets/images/contract_2025-0001.pdf" target="_blank" class="btn btn-download">
+                                        <i class="fas fa-file-pdf"></i>
+                                        عرض نسخة تجريبية
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- العمود الأول - كما هو -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-about">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="footer-logo">
+                        </a>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني - روابط سريعة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="affiliate.html">التسويق بالعمولة</a></li>
+                        <li><a href="investment-plans.html">باقات الاستثمار</a></li>
+                        <li><a href="payment-methods.html">طرق الدفع</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الثالث - الدعم والمساعدة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">الدعم والمساعدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الرابع - معاملات مالية -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">معاملات مالية</h4>
+                    <ul class="footer-links">
+                        <li><a href="top-investors.html">أفضل المستثمرين</a></li>
+                        <li><a href="latest-withdrawals.html">أخر عمليات السحب</a></li>
+                        <li><a href="latest-deposits.html">أخر عمليات الإيداع</a></li>
+                        <li><a href="latest-referrals.html">أخر عمليات الإحالة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الخامس - اتصل بنا -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span dir="ltr">18 Shacklewell Lane, London, England, E8 2EZ</span></li>
+                        <li><i class="fas fa-envelope"></i> info@noorsena.com</li>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+44 7366 499 420</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">© 2025 نورسينا للاستثمار المالي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

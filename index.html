@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نورسينا - منصة الاستثمار المالي الرائدة</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- البريلودر -->
+    <div class="preloader">
+        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">جاري التحميل...</div>
+        <div class="preloader-progress">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- رأس السايد بار للشاشات الصغيرة -->
+                <div class="sidebar-header d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+                    </a>
+                    <div class="sidebar-close" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-dropdown" href="javascript:void(0);" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">عن الشركة <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="affiliate.html">التسويق بالعمولة</a></li>
+                            <li><a class="dropdown-item" href="contract.html">عقد الاستثمار</a></li>
+                            <li><a class="dropdown-item" href="license.html">ترخيص الشركة</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">أراء العملاء</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-to-start.html">كيف أبدأ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investment-plans.html">باقات الإستثمار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment-methods.html">طرق الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">أسئلة شائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-gold-outline me-2">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-gold">إنشاء حساب</a>
+                </div>
+            </div>
+            <!-- طبقة التظليل للسايد بار -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>استثمر أموالك بذكاء مع نورسينا</h1>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3>15,000+</h3>
+                                <p>مستثمر نشط</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>98%</h3>
+                                <p>رضا العملاء</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>10+</h3>
+                                <p>سنوات خبرة</p>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="investment-plans.html" class="btn btn-gold">ابدأ الاستثمار الآن</a>
+                            <a href="#about" class="btn btn-gold-outline">تعرف علينا أكثر</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="simple-contract-showcase">
+                        <div class="contract-paper">
+                            <div class="contract-header-simple">
+                                <i class="fas fa-file-contract"></i>
+                                <h3>عقد استثمار نورسينا</h3>
+                            </div>
+                            <div class="contract-content">
+                                <h4>مميزات العقد</h4>
+                                <ul>
+                                    <li>خطط استثمارية متنوعة تناسب أهدافك</li>
+                                    <li>إدارة احترافية للمحافظ الاستثمارية</li>
+                                    <li>تقارير دورية عن أداء استثماراتك</li>
+                                    <li>إمكانية سحب الأرباح بشكل شهري</li>
+                                </ul>
+                                <div class="contract-signatures-simple">
+                                    <div class="signature-area">
+                                        <div class="signature-label">توقيع المستثمر</div>
+                                        <div class="signature-placeholder"></div>
+                                    </div>
+                                    <div class="signature-area">
+                                        <div class="signature-label">نورسينا</div>
+                                        <div class="signature-placeholder signed"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contract-footer-simple">
+                                <div class="contract-badge">مرخصة رسمياً <i class="fas fa-certificate"></i></div>
+                                <div class="contract-number-simple">رقم العقد: INV-2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-cards">
+            <div class="floating-card">
+                <i class="fas fa-chart-line"></i>
+                <h5>عوائد يومية مضمونة</h5>
+            </div>
+            <div class="floating-card">
+                <i class="fas fa-shield-alt"></i>
+                <h5>استثمار آمن 100%</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="assets/images/about-hom.webp" alt="فريق نورسينا للاستثمار المالي" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-heading text-start">
+                        <h6 class="sub-heading">من نحن</h6>
+                        <h2 class="section-title">نورسينا - رؤية جديدة للاستثمار
+                        </h2>
+                    </div>
+                    <p class="about-text">نورسينا للاستثمار المالي هي منصة استثمارية رائدة في مجال الاستثمارات المالية، تأسست عام 2013 بهدف تقديم حلول استثمارية مبتكرة وآمنة للمستثمرين.</p>
+                    <p class="about-text">نعمل على استثمار أموالك في مشاريع مدروسة بعناية وذات عوائد مجزية، مع ضمان الشفافية الكاملة والأمان لرأس المال.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>استثمارات آمنة ومضمونة</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>فريق من الخبراء الماليين</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>عوائد يومية مستقرة</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>دعم فني على مدار الساعة</span>
+                        </div>
+                    </div>
+                    <a href="investment-plans.html" class="btn btn-gold mt-4">اكتشف خطط الاستثمار</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم كيف أبدأ -->
+    <section class="section how-to-start-section" id="how-to-start">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">دليل المستثمر</h6>
+                <h2 class="section-title">كيف أبدأ الاستثمار مع نورسينا؟</h2>
+                <p class="section-description">خطوات بسيطة تمكنك من البدء في رحلة الاستثمار الآمنة والمربحة مع نورسينا</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="row">
+                    <!-- الخطوة 1 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-user-plus"></i>
+                                <span class="step-number">1</span>
+                            </div>
+                            <h4 class="step-title">إنشاء حساب</h4>
+                            <p class="step-description">قم بإنشاء حساب جديد على منصة نورسينا في أقل من دقيقتين</p>
+                            <a href="register.html" class="step-link">إنشاء حساب <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- الخطوة 2 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span class="step-number">2</span>
+                            </div>
+                            <h4 class="step-title">اختر خطة الاستثمار</h4>
+                            <p class="step-description">اختر من بين خططنا الاستثمارية ما يناسب أهدافك المالية</p>
+                            <a href="investment-plans.html" class="step-link">مشاهدة الخطط <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- الخطوة 3 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-credit-card"></i>
+                                <span class="step-number">3</span>
+                            </div>
+                            <h4 class="step-title">إيداع المبلغ</h4>
+                            <p class="step-description">قم بإيداع المبلغ الذي تريد استثماره عبر طرق الدفع المتاحة</p>
+                            <a href="payment-methods.html" class="step-link">طرق الدفع <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- الخطوة 4 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <i class="fas fa-chart-line"></i>
+                                <span class="step-number">4</span>
+                            </div>
+                            <h4 class="step-title">اجني الأرباح</h4>
+                            <p class="step-description">استلم أرباحك اليومية واسحبها متى شئت بكل سهولة</p>
+                            <a href="how-to-start.html" class="step-link">معرفة المزيد <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="how-to-start.html" class="btn btn-gold">تفاصيل أكثر حول طريقة البدء</a>            </div>
+        </div>
+    </section>
+
+    <!-- قسم باقات الاستثمار -->
+    <section class="section investment-plans-section bg-white" id="investment-plans">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">خطط استثمارية متنوعة</h6>
+                <h2 class="section-title">باقات الاستثمار المميزة</h2>
+                <p class="section-description">اختر الباقة المناسبة لاحتياجاتك واستمتع بعوائد يومية ثابتة ومضمونة</p>
+            </div>
+
+            <div class="investment-plans-wrapper">
+                <div class="row justify-content-center">
+                    <!-- الباقة البرونزية -->
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="investment-plan">
+                            <div class="plan-icon">
+                                <i class="fas fa-award bronze-icon"></i>
+                            </div>
+                            <h3 class="plan-title">الباقة البرونزية</h3>
+                            <div class="plan-percentage">
+                                <span class="percentage-value">1.00<span class="percentage-sign">%</span></span>
+                                <span class="percentage-period">كل يوم لمدة 120 يوم</span>
+                            </div>
+                            <div class="plan-divider"></div>
+                            <div class="plan-price-range">
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأدنى</span>
+                                    <span class="price-value">$100.00</span>
+                                </div>
+                                <div class="range-separator">
+                                    <i class="fas fa-arrows-alt-h"></i>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأقصى</span>
+                                    <span class="price-value">$499.00</span>
+                                </div>
+                            </div>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>مدة الاستثمار: 120 يوم</span>
+                                </div>
+                                <div class="detail-item highlight">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>إجمالي العائد: 120.00%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>سحب الأرباح: كل يوم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>استرجاع رأس المال: نعم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-headset"></i>
+                                    <span>دعم فني على مدار الساعة</span>
+                                </div>
+                            </div>
+                            <div class="plan-actions">
+                                <button type="button" class="btn-invest">استثمر الآن</button>
+                                <button type="button" class="btn-calculate" data-bs-toggle="modal" data-bs-target="#calculatorModal" data-plan="bronze" data-percentage="1.00">
+                                    <i class="fas fa-calculator"></i> احسب الربح
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الباقة الفضية - الأكثر شعبية -->
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="investment-plan popular">
+                            <div class="plan-tag">الأكثر شعبية</div>
+                            <div class="plan-icon">
+                                <i class="fas fa-medal silver-icon"></i>
+                            </div>
+                            <h3 class="plan-title">الباقة الفضية</h3>
+                            <div class="plan-percentage">
+                                <span class="percentage-value">1.50<span class="percentage-sign">%</span></span>
+                                <span class="percentage-period">كل يوم لمدة 120 يوم</span>
+                            </div>
+                            <div class="plan-divider"></div>
+                            <div class="plan-price-range">
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأدنى</span>
+                                    <span class="price-value">$500.00</span>
+                                </div>
+                                <div class="range-separator">
+                                    <i class="fas fa-arrows-alt-h"></i>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأقصى</span>
+                                    <span class="price-value">$1,499.00</span>
+                                </div>
+                            </div>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>مدة الاستثمار: 120 يوم</span>
+                                </div>
+                                <div class="detail-item highlight">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>إجمالي العائد: 180.00%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>سحب الأرباح: كل يوم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>استرجاع رأس المال: نعم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-headset"></i>
+                                    <span>دعم فني مميز</span>
+                                </div>
+                            </div>
+                            <div class="plan-actions">
+                                <button type="button" class="btn-invest">استثمر الآن</button>
+                                <button type="button" class="btn-calculate" data-bs-toggle="modal" data-bs-target="#calculatorModal" data-plan="silver" data-percentage="1.50">
+                                    <i class="fas fa-calculator"></i> احسب الربح
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الباقة الذهبية -->
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="investment-plan">
+                            <div class="plan-icon">
+                                <i class="fas fa-crown gold-icon"></i>
+                            </div>
+                            <h3 class="plan-title">الباقة الذهبية</h3>
+                            <div class="plan-percentage">
+                                <span class="percentage-value">2.00<span class="percentage-sign">%</span></span>
+                                <span class="percentage-period">كل يوم لمدة 120 يوم</span>
+                            </div>
+                            <div class="plan-divider"></div>
+                            <div class="plan-price-range">
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأدنى</span>
+                                    <span class="price-value">$1,500.00</span>
+                                </div>
+                                <div class="range-separator">
+                                    <i class="fas fa-arrows-alt-h"></i>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأقصى</span>
+                                    <span class="price-value">$4,999.00</span>
+                                </div>
+                            </div>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>مدة الاستثمار: 120 يوم</span>
+                                </div>
+                                <div class="detail-item highlight">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>إجمالي العائد: 240.00%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>سحب الأرباح: كل يوم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>استرجاع رأس المال: نعم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-headset"></i>
+                                    <span>دعم فني على مدار الساعة</span>
+                                </div>
+                            </div>
+                            <div class="plan-actions">
+                                <button type="button" class="btn-invest">استثمر الآن</button>
+                                <button type="button" class="btn-calculate" data-bs-toggle="modal" data-bs-target="#calculatorModal" data-plan="gold" data-percentage="2.00">
+                                    <i class="fas fa-calculator"></i> احسب الربح
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الباقة الماسية - المميزة -->
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="investment-plan premium">
+                            <div class="plan-tag premium-tag">المميزة - VIP</div>
+                            <div class="plan-icon">
+                                <i class="fas fa-gem diamond-icon"></i>
+                            </div>
+                            <h3 class="plan-title">الباقة الماسية</h3>
+                            <div class="plan-percentage">
+                                <span class="percentage-value">2.50<span class="percentage-sign">%</span></span>
+                                <span class="percentage-period">كل يوم لمدة 120 يوم</span>
+                            </div>
+                            <div class="plan-divider"></div>
+                            <div class="plan-price-range">
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأدنى</span>
+                                    <span class="price-value">$10,000.00</span>
+                                </div>
+                                <div class="range-separator">
+                                    <i class="fas fa-arrows-alt-h"></i>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">الحد الأقصى</span>
+                                    <span class="price-value">$100,000.00</span>
+                                </div>
+                            </div>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>مدة الاستثمار: 120 يوم</span>
+                                </div>
+                                <div class="detail-item highlight">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>إجمالي العائد: 300.00%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <span>سحب الأرباح: كل يوم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>استرجاع رأس المال: نعم</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-headset"></i>
+                                    <span>دعم فني مميز</span>
+                                </div>
+                            </div>
+                            <div class="plan-actions">
+                                <button type="button" class="btn-invest">استثمر الآن</button>
+                                <button type="button" class="btn-calculate" data-bs-toggle="modal" data-bs-target="#calculatorModal" data-plan="diamond" data-percentage="2.50">
+                                    <i class="fas fa-calculator"></i> احسب الربح
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مودال حاسبة الأرباح -->
+            <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- زر الإغلاق -->
+                            <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="إغلاق">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            
+                            <!-- أيقونة الحاسبة والعنوان -->
+                            <div class="w-100 text-center header-title-container">
+                                <div class="calculator-icon-wrapper mx-auto mb-2">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h5 class="modal-title w-100" id="calculatorModalLabel">حاسبة الأرباح</h5>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="calculator-container">
+                                
+                                <!-- عنوان الحاسبة مع اسم الباقة -->
+                                <h6 class="calculator-subtitle mb-4 text-center" id="planTitle">احسب أرباحك من الباقة</h6>
+                                
+                                <div id="calculatorInputs" class="px-1">
+                                    <!-- اختيار الباقة -->
+                                    <div class="package-selection-container mb-4">
+                                        <div class="package-selection-label">
+                                            <i class="fas fa-medal"></i>
+                                            <label for="selectPlan" class="form-label fw-bold mb-1">اختر الباقة</label>
+                                        </div>
+                                        <div class="position-relative">
+                                            <select class="form-select custom-select package-select-dropdown" id="selectPlan">
+                                                <option value="bronze" data-percentage="1.00" data-min="100" data-max="499">الباقة البرونزية (1.00% يومياً)</option>
+                                                <option value="silver" data-percentage="1.50" data-min="500" data-max="1499">الباقة الفضية (1.50% يومياً)</option>
+                                                <option value="gold" data-percentage="2.00" data-min="1500" data-max="4999">الباقة الذهبية (2.00% يومياً)</option>
+                                                <option value="diamond" data-percentage="2.50" data-min="10000" data-max="100000">الباقة الماسية (2.50% يومياً)</option>
+                                            </select>
+                                            <div class="package-dropdown-arrow">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- مبلغ الاستثمار -->
+                                    <div class="amount-input-container mb-4">
+                                        <div class="amount-input-label">
+                                            <i class="fas fa-dollar-sign"></i>
+                                            <label for="investmentAmount" class="form-label fw-bold mb-1">مبلغ الاستثمار</label>
+                                        </div>
+                                        <div class="amount-input-wrapper">
+                                            <input type="number" class="amount-input" id="investmentAmount" placeholder="أدخل مبلغ الاستثمار">
+                                            <span class="amount-currency-symbol">$</span>
+                                        </div>
+                                        <div class="amount-limits mt-2" id="investmentLimits">حدود الباقة: $100.00 - $499.00</div>
+                                        <div id="amountError"></div>
+                                    </div>
+                                    
+                                    <!-- زر احسب الربح -->
+                                    <div class="d-grid">
+                                        <button type="button" class="calculate-button" id="calculateBtn">
+                                            <i class="fas fa-calculator"></i>
+                                            احسب الربح
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- نتائج الحساب (مخفية في البداية) -->
+                                <div id="calculatorResults" class="mt-4 d-none">
+                                    <div class="results-header">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h6 class="me-2 fw-bold">نتائج الحساب</h6>
+                                    </div>
+                                    
+                                    <div class="results-container">
+                                        <div class="result-item">
+                                            <div class="result-item-label">
+                                                <i class="fas fa-coins daily-profit-icon"></i>
+                                                <span class="me-2">الربح اليومي</span>
+                                            </div>
+                                            <div class="result-item-value text-success" id="dailyProfit">$0.00</div>
+                                        </div>
+                                        
+                                        <div class="result-item">
+                                            <div class="result-item-label">
+                                                <i class="fas fa-hand-holding-dollar total-profit-icon"></i>
+                                                <span class="me-2">صافي الربح</span>
+                                            </div>
+                                            <div class="result-item-value text-success" id="totalProfit">$0.00</div>
+                                        </div>
+                                        
+                                        <div class="result-item">
+                                            <div class="result-item-label">
+                                                <i class="fas fa-sack-dollar total-return-icon"></i>
+                                                <span class="me-2">إجمالي العائد</span>
+                                            </div>
+                                            <div class="result-item-value text-success" id="totalReturn">$0.00</div>
+                                        </div>
+                                        
+                                        <div class="result-note">
+                                            <i class="fas fa-info-circle"></i>
+                                            <small class="me-2">تنويه: إجمالي العائد يشمل رأس المال الأساسي للاستثمار.</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid mt-4">
+                                        <button type="button" class="calculate-button" id="recalculateBtn">
+                                            <i class="fas fa-redo"></i>
+                                            احسب الربح مرة أخرى
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مودل استثمار جديد للزائر -->
+            <div class="modal fade" id="investmentModalGuest" tabindex="-1" aria-labelledby="investmentModalGuestLabel" aria-hidden="true" dir="rtl">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- زر الإغلاق -->
+                            <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="إغلاق">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            
+                            <!-- أيقونة القفل والعنوان -->
+                            <div class="w-100 text-center header-title-container">
+                                <div class="investment-icon-wrapper mx-auto mb-2">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h5 class="modal-title w-100" id="investmentModalGuestLabel">إكمال عملية الاستثمار</h5>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="investment-modal-container">
+                                <!-- رسالة التسجيل -->
+                                <div class="text-center mb-4">
+                                    <div class="user-icon-container mb-3">
+                                        <i class="fas fa-user-lock"></i>
+                                    </div>
+                                    <p class="login-message">لإكمال العملية , يرجى تسجيل الدخول إلى حسابك أولاً</p>
+                                    
+                                    <p class="register-hint mt-3">إذا لم يكن لديك حساب، يمكنك <a href="register.html" class="register-link">إنشاء حساب جديد.</a></p>
+                                </div>
+                                
+                                <div class="d-grid gap-3 mt-4">
+                                    <a href="login.html" class="btn-login">
+                                        <i class="fas fa-sign-in-alt"></i>
+                                        تسجيل الدخول
+                                    </a>
+                                    <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مودل استثمار جديد للعميل المسجل -->
+            <div class="modal fade" id="investmentModalUser" tabindex="-1" aria-labelledby="investmentModalUserLabel" aria-hidden="true" dir="rtl">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- زر الإغلاق -->
+                            <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="إغلاق">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            
+                            <!-- أيقونة الاستثمار والعنوان -->
+                            <div class="w-100 text-center header-title-container">
+                                <div class="investment-icon-wrapper mx-auto mb-2">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <h5 class="modal-title w-100" id="investmentModalUserLabel">استثمار جديد</h5>
+                                <p class="selected-package mt-1" id="selectedPackage">الباقة: الباقة الفضية</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="investment-modal-container">
+                                <!-- وسيلة الدفع -->
+                                <div class="payment-method-container mb-4">
+                                    <div class="payment-method-label">
+                                        <i class="fas fa-credit-card"></i>
+                                        <label class="form-label fw-bold mb-1">وسيلة الدفع</label>
+                                    </div>
+                                    <div class="position-relative payment-select-container">
+                                        <select class="form-select custom-select payment-select-dropdown" id="paymentMethod">
+                                            <option selected>الدفع من رصيد محفظة الإيداع</option>
+                                            <option selected>الدفع من رصيد محفظة الفائدة</option>
+                                            <option selected>الدفع من وسائل الدفع الخارجية</option>
+                                        </select>
+                                        <div class="payment-dropdown-arrow">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- مبلغ الاستثمار -->
+                                <div class="investment-amount-container mb-4">
+                                    <div class="investment-amount-label">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <label for="userInvestmentAmount" class="form-label fw-bold mb-1">مبلغ الاستثمار (بالدولار)</label>
+                                    </div>
+                                    <div class="investment-amount-wrapper">
+                                        <input type="number" class="investment-amount-input" id="userInvestmentAmount" value="100" placeholder="أدخل مبلغ الاستثمار">
+                                        <span class="investment-currency-symbol">$</span>
+                                    </div>
+                                    <p class="investment-amount-hint mt-2">يرجى إدخال مبلغ بين $1,000 و $10,000</p>
+                                </div>
+                                
+
+                                
+                                <!-- ملخص الاستثمار -->
+                                <div class="investment-summary mt-4" id="investmentSummary">
+                                    <div class="investment-summary-header">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h6 class="me-2 fw-bold">ملخص الاستثمار</h6>
+                                    </div>
+                                    <div class="investment-summary-content">
+                                        <div class="summary-item">
+                                            <span class="summary-label">المبلغ المستثمر:</span>
+                                            <span class="summary-value" id="summaryAmount">$1,000</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="summary-label">نسبة الربح:</span>
+                                            <span class="summary-value" id="summaryRate">1% اليومي</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="summary-label">مدة الاستثمار:</span>
+                                            <span class="summary-value" id="summaryDuration">220 يوم</span>
+                                        </div>
+                                        <hr class="summary-divider">
+                                        <div class="summary-item">
+                                            <span class="summary-label">الربح اليومي:</span>
+                                            <span class="summary-value text-success" id="summaryDailyProfit">$10</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="summary-label">صافي الربح:</span>
+                                            <span class="summary-value text-success" id="summaryNetProfit">$2,200</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="summary-label">إجمالي العائد:</span>
+                                            <span class="summary-value text-primary fw-bold" id="summaryTotalReturn">$3,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid gap-3 mt-4">
+                                    <button type="button" class="btn-confirm">
+                                        <i class="fas fa-check-circle"></i>
+                                        تأكيد الاستثمار
+                                    </button>
+                                    <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="investment-plans.html" class="btn btn-gold">اكتشف المزيد من التفاصيل</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الميزات الرئيسية -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">لماذا تختارنا</h6>
+                <h2 class="section-title">مميزات الاستثمار مع نورسينا</h2>
+                <p class="section-description">نقدم لك تجربة استثمارية فريدة تجمع بين العوائد المجزية والأمان والموثوقية</p>
+            </div>
+
+            <div class="features-container">
+                <div class="row">
+                    <!-- الميزة 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>استثمار آمن 100%</h4>
+                                <p>نضمن لك حماية كاملة لرأس المال مع استراتيجيات استثمارية مدروسة تقلل المخاطر إلى أدنى حد ممكن.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الميزة 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>أرباح يومية مستقرة</h4>
+                                <p>احصل على عوائد يومية ثابتة ومضمونة تتراوح بين 1% إلى 2.5% حسب الباقة الاستثمارية المختارة.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الميزة 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>سحب أرباح مرن</h4>
+                                <p>يمكنك سحب أرباحك بشكل يومي أو إعادة استثمارها لتعظيم العائد مع خيارات سحب متعددة وسريعة.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الميزة 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>دعم فني متميز</h4>
+                                <p>فريق دعم متخصص جاهز لمساعدتك على مدار الساعة للإجابة على جميع استفساراتك وحل أي مشاكل قد تواجهك.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الميزة 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>متابعة مباشرة للاستثمار</h4>
+                                <p>منصة متطورة تتيح لك متابعة استثماراتك وأرباحك لحظة بلحظة مع تقارير مفصلة وإحصائيات دقيقة.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الميزة 6 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>برنامج إحالة مربح</h4>
+                                <p>احصل على عمولات مجزية تصل إلى 10% من استثمارات من تدعوهم للانضمام إلى منصة نورسينا.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="section testimonials-section bg-white" id="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">آراء العملاء</h6>
+                <h2 class="section-title">ماذا يقول عملاؤنا عنا</h2>
+                <p class="section-description">نفخر بثقة عملائنا وتقديرهم لخدماتنا المالية المتميزة، وهذه بعض آرائهم حول تجربتهم مع نورسينا للاستثمار المالي</p>
+            </div>
+
+            <div class="testimonials-wrapper">
+                <div class="row testimonials-slider">
+                    <!-- آراء العميل 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card">
+
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p><span class="big-quote">"</span>منصة نورسينا غيرت نظرتي للاستثمار بشكل كامل. الخدمات المقدمة احترافية والعائد المادي ممتاز. أنصح بها بشدة لكل من يبحث عن استثمار آمن ومربح.<span class="big-quote">"</span></p>
+                            </div>
+                            <div class="testimonial-divider"></div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h5>أحمد محمد</h5>
+                                    <span>مستثمر في الباقة الذهبية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- آراء العميل 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card featured-testimonial">
+
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p><span class="big-quote">"</span>بعد تجربة العديد من منصات الاستثمار، وجدت في نورسينا الشفافية والمصداقية التي كنت أبحث عنها. فريق الدعم متعاون للغاية والأرباح تصل في موعدها دائماً.<span class="big-quote">"</span></p>
+                            </div>
+                            <div class="testimonial-divider"></div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h5>سارة عبدالله</h5>
+                                    <span>مستثمرة في الباقة الفضية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- آراء العميل 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card">
+
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p><span class="big-quote">"</span>كمبتدئ في عالم الاستثمار، كنت قلقاً من المخاطرة بأموالي. لكن مع نورسينا، وجدت التوجيه والدعم الكامل منذ اليوم الأول. الآن أنا أدير محفظة استثمارية.<span class="big-quote">"</span></p>
+                            </div>
+                            <div class="testimonial-divider"></div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h5>خالد العمري</h5>
+                                    <span>مستثمر في الباقة البرونزية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="testimonials.html" class="btn btn-gold">المزيد من آراء العملاء</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم نظام الإحالة -->
+    <section class="section referral-section" id="referral">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">برنامج التسويق بالعمولة</h6>
+                <h2 class="section-title">نظام الإحالة</h2>
+                <p class="section-description">انضم إلى شبكة شركائنا واحصل على عمولة 10% من إيداعات المستثمرين الجدد</p>
+            </div>
+            
+            <div class="row referral-cards">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="referral-card">
+                        <div class="referral-card-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h5>عمولة فورية 10%</h5>
+                        <p>احصل على 10% من قيمة كل إيداع يتم من خلال رابط الإحالة الخاص بك</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="referral-card">
+                        <div class="referral-card-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h5>دفع فوري للعمولات</h5>
+                        <p>يتم إضافة العمولات مباشرة إلى محفظتك ويمكنك سحبها في أي وقت</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="referral-card">
+                        <div class="referral-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5>تتبع مباشر</h5>
+                        <p>لوحة تحكم متطورة لمتابعة إحالاتك وأرباحك بشكل مباشر</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="affiliate.html" class="btn btn-gold">تعرف على المزيد</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم أحدث المعاملات -->
+    <section class="section transactions-section" id="transactions">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">سجل العمليات</h6>
+                <h2 class="section-title">أحدث المعاملات</h2>
+                <p class="section-description">استعرض أحدث المعاملات التي تمت عبر منصتنا بشفافية كاملة</p>
+            </div>
+            <div class="table-responsive">
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>اسم المستخدم</th>
+                            <th>التاريخ</th>
+                            <th>المبلغ</th>
+                            <th>التفاصيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="user-id">NS800380809</span></td>
+                            <td><span class="date">2025-06-29 11:30 م</span></td>
+                            <td><span class="amount-investment">+ $100.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS800380809</span></td>
+                            <td><span class="date">2025-06-29 11:30 م</span></td>
+                            <td><span class="amount-positive">+ $100.00</span></td>
+                            <td><span class="details">إيداع بواسطة بنك Payeer</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS026649695</span></td>
+                            <td><span class="date">2025-06-29 08:13 م</span></td>
+                            <td><span class="amount-negative">- $20.00</span></td>
+                            <td><span class="details">19.00 USDT سحب بواسطة USDT TRC20</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS640728461</span></td>
+                            <td><span class="date">2025-06-29 08:13 م</span></td>
+                            <td><span class="amount-investment">+ $100.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS640728461</span></td>
+                            <td><span class="date">2025-06-29 08:12 م</span></td>
+                            <td><span class="amount-positive">+ $100.00</span></td>
+                            <td><span class="details">إيداع بواسطة USDT TRC20</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS026649695</span></td>
+                            <td><span class="date">2025-06-29 06:24 م</span></td>
+                            <td><span class="amount-negative">- $30.00</span></td>
+                            <td><span class="details">28.50 $ سحب بواسطة بنك Payeer</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS259271860</span></td>
+                            <td><span class="date">2025-06-29 06:23 م</span></td>
+                            <td><span class="amount-investment">+ $100.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS259271860</span></td>
+                            <td><span class="date">2025-06-29 06:23 م</span></td>
+                            <td><span class="amount-positive">+ $100.00</span></td>
+                            <td><span class="details">إيداع بواسطة بنك Payeer</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS921859856</span></td>
+                            <td><span class="date">2025-06-29 06:22 م</span></td>
+                            <td><span class="amount-investment">+ $450.00</span></td>
+                            <td><span class="details">الإستثمار في الباقة البرونزية</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="user-id">NS270000662</span></td>
+                            <td><span class="date">2025-06-29 06:22 م</span></td>
+                            <td><span class="amount-positive">+ $450.00</span></td>
+                            <td><span class="details">إيداع بواسطة USDT TRC20</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- بطاقات المعاملات للشاشات الصغيرة -->
+            <div class="transaction-cards">
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS800380809</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 11:30 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS800380809</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 11:30 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة بنك Payeer</div>
+                </div>
+                
+                <div class="transaction-card withdrawal">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS026649695</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 08:13 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-negative">- $20.00</div>
+                    </div>
+                    <div class="card-details">19.00 USDT سحب بواسطة USDT TRC20</div>
+                </div>
+                
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS640728461</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 08:13 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS640728461</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 08:12 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة USDT TRC20</div>
+                </div>
+                
+                <div class="transaction-card withdrawal">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS026649695</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:24 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-negative">- $30.00</div>
+                    </div>
+                    <div class="card-details">28.50 $ سحب بواسطة بنك Payeer</div>
+                </div>
+                
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS259271860</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:23 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS259271860</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:23 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $100.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة بنك Payeer</div>
+                </div>
+                
+                <div class="transaction-card investment">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS921859856</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:22 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $450.00</div>
+                    </div>
+                    <div class="card-details">الإستثمار في الباقة البرونزية</div>
+                </div>
+                
+                <div class="transaction-card deposit">
+                    <div class="card-row">
+                        <div class="card-label">المستخدم:</div>
+                        <div class="card-value card-user-id">NS270000662</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">التاريخ:</div>
+                        <div class="card-value card-date">2025-06-29 06:22 م</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-label">المبلغ:</div>
+                        <div class="card-value card-amount amount-positive">+ $450.00</div>
+                    </div>
+                    <div class="card-details">إيداع بواسطة USDT TRC20</div>
+                </div>
+            </div>
+
+            <div class="transaction-badges">
+                <a class="transaction-badge" href="top-investors.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أفضل المستثمرين</h4>
+                        <p>تعرف على أفضل المستثمرين</p>
+                    </div>
+                </a>
+                <a class="transaction-badge" href="latest-deposits.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أحدث عمليات الإيداع</h4>
+                        <p>استعرض أحدث الإيداعات</p>
+                    </div>
+                </a>
+                <a class="transaction-badge" href="latest-withdrawals.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أحدث عمليات السحب</h4>
+                        <p>تتبع أحدث طلبات السحب</p>
+                    </div>
+                </a>
+                <a class="transaction-badge" href="latest-referrals.html">
+                    <div class="badge-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="badge-content">
+                        <h4>أحدث عمليات الإحالة</h4>
+                        <p>اكتشف أحدث الإحالات</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم طرق الدفع -->
+    <section class="section payment-methods-section bg-white" id="payment-methods">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">طرق الدفع</h6>
+                <h2 class="section-title">وسائل الدفع المتاحة</h2>
+                <p class="section-description">نوفر لك مجموعة متنوعة من وسائل الدفع السهلة والآمنة لتناسب احتياجاتك</p>
+            </div>
+
+            <div class="payment-methods-wrapper">
+                <div class="row justify-content-center align-items-center">
+                    <!-- Payeer -->
+                    <div class="col-lg-2 col-md-4 col-6 mb-4">
+                        <div class="payment-method-card">
+                            <div class="payment-method-icon">
+                                <i class="fas fa-wallet fa-3x" style="color: var(--primary-color);"></i>
+                            </div>
+                            <h5 class="payment-method-name">Payeer</h5>
+                        </div>
+                    </div>
+
+                    <!-- USDT TRC20 -->
+                    <div class="col-lg-2 col-md-4 col-6 mb-4">
+                        <div class="payment-method-card">
+                            <div class="payment-method-icon">
+                                <i class="fab fa-btc fa-3x" style="color: #26A17B;"></i>
+                            </div>
+                            <h5 class="payment-method-name">USDT TRC20</h5>
+                        </div>
+                    </div>
+
+                    <!-- فودافون كاش -->
+                    <div class="col-lg-2 col-md-4 col-6 mb-4">
+                        <div class="payment-method-card">
+                            <div class="payment-method-icon">
+                                <i class="fas fa-mobile-alt fa-3x" style="color: #e60000;"></i>
+                            </div>
+                            <h5 class="payment-method-name">فودافون كاش</h5>
+                        </div>
+                    </div>
+
+                    <!-- تحويل بنكي -->
+                    <div class="col-lg-2 col-md-4 col-6 mb-4">
+                        <div class="payment-method-card">
+                            <div class="payment-method-icon">
+                                <i class="fas fa-university fa-3x" style="color: #0056b3;"></i>
+                            </div>
+                            <h5 class="payment-method-name">تحويل بنكي</h5>
+                        </div>
+                    </div>
+
+                    <!-- البريد المصري -->
+                    <div class="col-lg-2 col-md-4 col-6 mb-4">
+                        <div class="payment-method-card">
+                            <div class="payment-method-icon">
+                                <img src="assets/images/payment/egypt-post.png" alt="البريد المصري">
+                            </div>
+                            <h5 class="payment-method-name">البريد المصري</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-info text-center mt-4">
+                    <div class="payment-limits">
+                        <div class="limit-item">
+                            <i class="fas fa-arrow-circle-down"></i>
+                            <span>الحد الأدنى للإيداع: <strong>100$</strong></span>
+                        </div>
+                        <div class="limit-item">
+                            <i class="fas fa-arrow-circle-up"></i>
+                            <span>الحد الأدنى للسحب: <strong>20$</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="payment-methods.html" class="btn btn-gold">تفاصيل طرق الدفع</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- العمود الأول - كما هو -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-about">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="footer-logo">
+                        </a>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني - روابط سريعة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="affiliate.html">التسويق بالعمولة</a></li>
+                        <li><a href="investment-plans.html">باقات الاستثمار</a></li>
+                        <li><a href="payment-methods.html">طرق الدفع</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الثالث - الدعم والمساعدة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">الدعم والمساعدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الرابع - معاملات مالية -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">معاملات مالية</h4>
+                    <ul class="footer-links">
+                        <li><a href="top-investors.html">أفضل المستثمرين</a></li>
+                        <li><a href="latest-withdrawals.html">أخر عمليات السحب</a></li>
+                        <li><a href="latest-deposits.html">أخر عمليات الإيداع</a></li>
+                        <li><a href="latest-referrals.html">أخر عمليات الإحالة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الخامس - اتصل بنا -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span dir="ltr">18 Shacklewell Lane, London, England, E8 2EZ</span></li>
+                        <li><i class="fas fa-envelope"></i> info@noorsena.com</li>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+44 7366 499 420</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">© 2025 نورسينا للاستثمار المالي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- Profit Calculator JS -->
+    <script src="assets/js/profit-calculator.js"></script>
+    <!-- Investment Modals JS -->
+    <script src="assets/js/investment-modals.js"></script>
+</body>
+</html>

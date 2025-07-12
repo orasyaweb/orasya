@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدخال رمز التحقق - نورسينا للاستثمار</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body class="auth-page">
+  <div class="auth-wrapper">
+    <div class="auth-container verify-code-container">
+      <div class="auth-main full-width">
+        <div class="auth-logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="نورسينا للاستثمار">
+          </a>
+        </div>
+        <h3 class="auth-title">أدخل رمز التحقق</h3>
+        <p class="auth-subtitle">تم إرسال رمز مكون من 6 أرقام إلى بريدك الإلكتروني</p>
+        
+        <div class="email-preview">
+          <span class="masked-email">t***@noorsena.com</span>
+        </div>
+        
+        <form class="auth-form verify-code-form">
+          <div class="form-group">
+            <div class="verification-code-container">
+              <input type="text" class="verification-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+              <input type="text" class="verification-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+              <input type="text" class="verification-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+              <input type="text" class="verification-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+              <input type="text" class="verification-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+              <input type="text" class="verification-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+            </div>
+            <div class="form-text text-center">أدخل الرمز المكون من 6 أرقام</div>
+          </div>
+          
+          <div class="resend-code">
+            <span>لم تستلم الرمز؟</span>
+            <a href="#" id="resendCode" class="resend-link">إعادة إرسال الرمز</a>
+            <div class="resend-timer d-none">
+              <span>يمكنك إعادة الإرسال بعد</span>
+              <span id="timer">60</span>
+              <span>ثانية</span>
+            </div>
+          </div>
+          
+          <div class="spam-notice">
+            <i class="fas fa-info-circle"></i>
+            <span>إذا لم تجد الرمز، يرجى التحقق من مجلد البريد الغير هام (Spam)</span>
+          </div>
+          
+          <button type="submit" class="btn btn-auth" id="verifyBtn">
+            <span class="btn-text">التحقق من الرمز</span>
+            <span class="btn-loader d-none"><i class="fas fa-spinner fa-spin"></i> جاري التحقق...</span>
+          </button>
+        </form>
+        
+        <div class="auth-footer">
+          <a href="forgot-password.html" class="back-link"><i class="fas fa-arrow-right ml-1"></i> العودة للخلف</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // التنقل بين حقول إدخال الرمز
+      const inputs = document.querySelectorAll('.verification-input');
+      
+      // تحديد الحقل الأول افتراضياً عند تحميل الصفحة
+      inputs[0].focus();
+      
+      // إضافة وظيفة اللصق للرمز كاملاً
+      document.addEventListener('paste', function(e) {
+        // التحقق من أن التركيز على أحد حقول إدخال الرمز
+        if (document.activeElement.classList.contains('verification-input')) {
+          e.preventDefault();
+          
+          // الحصول على النص الملصق
+          const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+          
+          // التحقق من أن النص الملصق يحتوي على أرقام فقط وطوله مناسب
+          if (/^\d+$/.test(pastedText)) {
+            // توزيع الأرقام على الحقول
+            const digits = pastedText.split('');
+            
+            // ملء الحقول بالأرقام المتاحة (بحد أقصى 6 أرقام)
+            for (let i = 0; i < Math.min(inputs.length, digits.length); i++) {
+              inputs[i].value = digits[i];
+            }
+            
+            // تحديد آخر حقل تم ملؤه
+            if (digits.length <= inputs.length) {
+              inputs[Math.min(inputs.length - 1, digits.length - 1)].focus();
+            } else {
+              inputs[inputs.length - 1].focus();
+            }
+            
+            // التحقق التلقائي إذا تم إدخال 6 أرقام كاملة
+            if (digits.length >= 6) {
+              verifyCode();
+            }
+          }
+        }
+      });
+      
+      // وظيفة التحقق من الرمز
+      function verifyCode() {
+        // جمع الرمز المدخل
+        let code = '';
+        let isComplete = true;
+        
+        inputs.forEach(input => {
+          if (input.value === '') {
+            isComplete = false;
+          }
+          code += input.value;
+        });
+        
+        // التحقق من اكتمال الرمز
+        if (isComplete && code.length === 6) {
+          // تغيير حالة الزر إلى جاري التحقق وإقفاله
+          const verifyBtn = document.getElementById('verifyBtn');
+          const btnText = verifyBtn.querySelector('.btn-text');
+          const btnLoader = verifyBtn.querySelector('.btn-loader');
+          
+          // إخفاء النص وإظهار التحميل
+          btnText.classList.add('d-none');
+          btnLoader.classList.remove('d-none');
+          
+          // إقفال الزر
+          verifyBtn.disabled = true;
+          verifyBtn.classList.add('btn-disabled');
+          
+          // إقفال حقول الإدخال
+          inputs.forEach(input => {
+            input.disabled = true;
+          });
+          
+          // محاكاة عملية التحقق من الخادم (سيتم استبدالها بطلب API حقيقي)
+          setTimeout(function() {
+            // للتجربة، سننتقل إلى صفحة إعادة تعيين كلمة المرور
+            window.location.href = 'reset-password.html';
+          }, 1500);
+          
+          return true;
+        }
+        
+        return false;
+      }
+      
+      inputs.forEach((input, index) => {
+        // عند الكتابة في الحقل
+        input.addEventListener('input', function(e) {
+          const value = e.target.value;
+          
+          // التأكد من أن المدخل رقم فقط
+          if (/^\d$/.test(value)) {
+            // الانتقال إلى الحقل التالي
+            if (index < inputs.length - 1) {
+              inputs[index + 1].focus();
+            } else {
+              // إذا كان هذا هو الحقل الأخير، تحقق من الرمز
+              verifyCode();
+            }
+          } else {
+            // إذا لم يكن رقمًا، إفراغ الحقل
+            e.target.value = '';
+          }
+        });
+        
+        // عند الضغط على زر الحذف
+        input.addEventListener('keydown', function(e) {
+          if (e.key === 'Backspace' && !e.target.value) {
+            // الانتقال إلى الحقل السابق عند الضغط على زر الحذف والحقل فارغ
+            if (index > 0) {
+              inputs[index - 1].focus();
+            }
+          }
+        });
+      });
+      
+      // إعادة إرسال الرمز
+      const resendLink = document.getElementById('resendCode');
+      const resendTimer = document.querySelector('.resend-timer');
+      const timerElement = document.getElementById('timer');
+      let timerInterval;
+      
+      resendLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // إخفاء رابط إعادة الإرسال وإظهار العداد
+        resendLink.classList.add('d-none');
+        resendTimer.classList.remove('d-none');
+        
+        // بدء العداد التنازلي
+        let seconds = 60;
+        timerElement.textContent = seconds;
+        
+        timerInterval = setInterval(function() {
+          seconds--;
+          timerElement.textContent = seconds;
+          
+          if (seconds <= 0) {
+            // إيقاف العداد وإعادة إظهار رابط إعادة الإرسال
+            clearInterval(timerInterval);
+            resendLink.classList.remove('d-none');
+            resendTimer.classList.add('d-none');
+          }
+        }, 1000);
+        
+        // هنا يمكن إضافة كود لإعادة إرسال الرمز فعليًا
+        alert('تم إعادة إرسال الرمز إلى بريدك الإلكتروني');
+      });
+      
+      // التحقق من الرمز عند تقديم النموذج
+      document.querySelector('.verify-code-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // استخدام وظيفة التحقق الجديدة
+        if (!verifyCode()) {
+          alert('يرجى إدخال رمز صحيح مكون من 6 أرقام');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

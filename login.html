@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول - نورسينا للاستثمار</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body class="auth-page">
+  <div class="auth-wrapper">
+    <div class="auth-container login-container">
+    <div class="auth-main full-width">
+      <div class="auth-logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="نورسينا للاستثمار">
+        </a>
+      </div>
+      <h3 class="auth-title">تسجيل الدخول إلى حسابك</h3>
+      <form class="auth-form login-form">
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder=" " required>
+          <label for="email" class="form-label">البريد الالكتروني او اسم المستخدم</label>
+          <i class="fas fa-envelope input-icon"></i>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="password" placeholder=" " required>
+          <label for="password" class="form-label">كلمة المرور</label>
+          <i class="fas fa-lock input-icon"></i>
+        </div>
+        <!-- كابتشا رقمية مكونة من 6 أرقام -->
+        <div class="form-group captcha-group">
+          <div class="captcha-container">
+            <div class="captcha-code" id="captchaCode"></div>
+            <button type="button" class="refresh-captcha" id="refreshCaptcha">
+              <i class="fas fa-sync-alt"></i>
+            </button>
+          </div>
+          <div class="form-group mt-2">
+            <input type="text" class="form-control" id="captchaInput" placeholder=" " required>
+            <label for="captchaInput" class="form-label">أدخل الرمز المعروض</label>
+            <i class="fas fa-shield-alt input-icon"></i>
+            <div class="form-text">أدخل الرمز المعروض من اليسار إلى اليمين</div>
+          </div>
+        </div>
+
+        <div class="remember-forgot">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="remember">
+            <label class="form-check-label" for="remember">تذكرني</label>
+          </div>
+          <a href="forgot-password.html" class="forgot-password">نسيت كلمة المرور؟</a>
+        </div>
+        <button type="submit" class="btn btn-auth">تسجيل الدخول</button>
+      </form>
+      <div class="auth-footer">
+        ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // متغير عالمي لقيمة الكابتشا
+      let captchaValue = '';
+      
+      // دالة لتوليد رمز كابتشا جديد مكون من 6 أرقام
+      function generateCaptcha() {
+        captchaValue = '';
+        for (let i = 0; i < 6; i++) {
+          captchaValue += Math.floor(Math.random() * 10).toString();
+        }
+        document.getElementById('captchaCode').textContent = captchaValue;
+      }
+      
+      // توليد الكابتشا عند تحميل الصفحة
+      generateCaptcha();
+      
+      // تحديث الكابتشا عند النقر على زر التحديث
+      document.getElementById('refreshCaptcha').addEventListener('click', function() {
+        generateCaptcha();
+      });
+
+      const form = document.querySelector('.login-form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        
+        // التحقق من صحة الكابتشا
+        const captchaInput = document.getElementById('captchaInput').value;
+        if (captchaInput !== captchaValue) {
+          alert('رمز التحقق غير صحيح، يرجى المحاولة مرة أخرى');
+          generateCaptcha(); // توليد كابتشا جديدة
+          document.getElementById('captchaInput').value = ''; // مسح حقل الإدخال
+          return;
+        }
+        
+        if (email && password) {
+          // إرسال النموذج إلى الخادم (هذا مجرد مثال)
+          console.log('تم تسجيل الدخول بنجاح');
+          console.log('البيانات:', { email, password: '********' });
+          // يمكن إضافة رمز لإرسال البيانات إلى الخادم هنا
+          
+          // توجيه المستخدم إلى صفحة لوحة التحكم
+          // window.location.href = 'dashboard.html';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

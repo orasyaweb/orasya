@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج التسويق بالعمولة - نورسينا للاستثمار المالي</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- البريلودر -->
+    <div class="preloader">
+        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">جاري التحميل...</div>
+        <div class="preloader-progress">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- رأس السايد بار للشاشات الصغيرة -->
+                <div class="sidebar-header d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+                    </a>
+                    <div class="sidebar-close" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-dropdown" href="javascript:void(0);" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">عن الشركة <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="affiliate.html">التسويق بالعمولة</a></li>
+                            <li><a class="dropdown-item" href="contract.html">عقد الاستثمار</a></li>
+                            <li><a class="dropdown-item" href="license.html">ترخيص الشركة</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">أراء العملاء</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-to-start.html">كيف أبدأ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investment-plans.html">باقات الإستثمار</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment-methods.html">طرق الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">أسئلة شائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-gold-outline me-2">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-gold">إنشاء حساب</a>
+                </div>
+            </div>
+            <!-- طبقة التظليل للسايد بار -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </div>
+    </nav>
+
+    <!-- بانر الصفحة -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>برنامج التسويق بالعمولة</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">برنامج التسويق بالعمولة</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مقدمة التسويق بالعمولة -->
+    <section class="section affiliate-intro bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="intro-content">
+                        <h6 class="sub-heading">برنامج التسويق بالعمولة</h6>
+                        <h1 class="intro-title">اربح بينما تنمو استثمارات عملائك</h1>
+                        <p class="intro-description">انضم إلى برنامج التسويق بالعمولة من نورسينا واحصل على عمولة 10% من قيمة كل إيداع يقوم به المستثمرين المسجلين من خلالك. نحن نقدم فرصة مميزة للمسوقين والمؤثرين لتحقيق دخل إضافي مستدام من خلال شبكة علاقاتهم.</p>
+                        <div class="intro-buttons">
+                            <a href="#join-program" class="btn btn-gold">انضم إلى البرنامج</a>
+                            <a href="#why-us" class="btn btn-outline-gold">اكتشف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="intro-image">
+                        <img src="assets/images/markting.webp" alt="برنامج التسويق بالعمولة" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم خطوات البدء -->
+    <section class="section affiliate-steps-section" id="how-to-start">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">خطوات بسيطة</h6>
+                <h2 class="section-title">ثلاث خطوات بسيطة للبدء</h2>
+                <p class="section-description">انضم إلى برنامج التسويق بالعمولة واحصل على عمولاتك من خلال هذه الخطوات البسيطة</p>
+            </div>
+            
+            <div class="row affiliate-steps-row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-step-card">
+                        <div class="affiliate-step-number">1</div>
+                        <div class="affiliate-step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h4>سجل في البرنامج</h4>
+                        <p>قم بإنشاء حساب في منصة نورسينا وستجد رابط الإحالة الخاص بك جاهزاً في لوحة التحكم للبدء بالتسويق فوراً.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-step-card">
+                        <div class="affiliate-step-number">2</div>
+                        <div class="affiliate-step-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h4>روّج لمنصة نورسينا</h4>
+                        <p>شارك رابط الإحالة الخاص بك مع شبكة علاقاتك عبر وسائل التواصل الاجتماعي، المدونات، القنوات، أو أي منصة رقمية أخرى.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-step-card">
+                        <div class="affiliate-step-number">3</div>
+                        <div class="affiliate-step-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h4>احصل على عمولاتك</h4>
+                        <p>استلم عمولة 10% من قيمة كل إيداع يقوم به المستثمرون المسجلون من خلال رابط الإحالة الخاص بك بشكل فوري.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مميزات البرنامج -->
+    <section class="section affiliate-features-section bg-white" id="why-us">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">لماذا نحن</h6>
+                <h2 class="section-title">مميزات برنامج التسويق بالعمولة</h2>
+                <p class="section-description">نقدم لك تجربة تسويقية متكاملة مع أدوات متطورة وعمولات مجزية تضمن لك النجاح في مسيرتك التسويقية</p>
+            </div>
+            
+            <div class="row affiliate-features-row">
+                <!-- الميزة 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-feature-card">
+                        <div class="affiliate-feature-content">
+                            <h4>
+                                <div class="affiliate-feature-icon">
+                                    <i class="fas fa-percentage"></i>
+                                </div>
+                                عمولة مجزية
+                            </h4>
+                            <p>احصل على عمولة بقيمة 10% من كل إيداع يقوم به المستثمرون المسجلون من خلالك، مما يتيح لك تحقيق دخل مستمر مع زيادة عدد العملاء.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الميزة 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-feature-card">
+                        <div class="affiliate-feature-content">
+                            <h4><div class="affiliate-feature-icon"><i class="fas fa-money-bill-wave"></i></div> دفع فوري للعمولات</h4>
+                            <p>تحصل على عمولاتك فوراً بعد كل عملية إيداع ناجحة من عملائك، دون أي تأخير أو شروط معقدة، مما يضمن لك تدفقاً مالياً سريعاً ومستمراً.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الميزة 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-feature-card">
+                        <div class="affiliate-feature-content">
+                            <h4>
+                                <div class="affiliate-feature-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                لوحة تحكم متطورة
+                            </h4>
+                            <p>نوفر لك لوحة تحكم سهلة الاستخدام تمكنك من متابعة أدائك وعمولاتك وإحصائيات الزيارات والتحويلات بشكل تفصيلي ودقيق.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الميزة 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-feature-card">
+                        <div class="affiliate-feature-content">
+                            <h4>
+                                <div class="affiliate-feature-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                مواد تسويقية احترافية
+                            </h4>
+                            <p>نقدم مجموعة متكاملة من المواد التسويقية (بانرات، صور، نصوص) بجودة عالية ومصممة خصيصاً لتعزيز حملاتك التسويقية وزيادة معدلات التحويل.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الميزة 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-feature-card">
+                        <div class="affiliate-feature-content">
+                            <h4>
+                                <div class="affiliate-feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                دعم فني مخصص
+                            </h4>
+                            <p>نوفر لك دعماً فنياً متخصصاً على مدار الساعة للإجابة على استفساراتك ومساعدتك في تطوير استراتيجياتك التسويقية وحل أي مشكلات قد تواجهك.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الميزة 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="affiliate-feature-card">
+                        <div class="affiliate-feature-content">
+                            <h4>
+                                <div class="affiliate-feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                تتبع دقيق للأداء
+                            </h4>
+                            <p>نظام تتبع متطور يسمح لك بمراقبة أداء روابطك التسويقية، ومعرفة مصادر حركة المرور والتحويلات، مما يساعدك على تحسين استراتيجياتك التسويقية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشروط والأحكام -->
+    <section class="section affiliate-terms-section" id="terms">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">أحكام برنامج التسويق</h6>
+                <h2 class="section-title">الشروط والأحكام</h2>
+                <p class="section-description">يرجى قراءة الشروط والأحكام التالية بعناية قبل المشاركة في برنامج التسويق بالعمولة</p>
+            </div>
+            
+            <div class="affiliate-terms-wrapper">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="affiliate-terms-card">
+                            <h4>الشروط العامة</h4>
+                            <ul class="affiliate-terms-list">
+                                <li>يجب أن يكون المسوق بالعمولة قد أكمل 18 عاماً من العمر.</li>
+                                <li>يجب أن يكون لديك حساب نشط في منصة نورسينا.</li>
+                                <li>تحتفظ نورسينا بالحق في تعديل شروط وأحكام البرنامج في أي وقت.</li>
+                                <li>يحظر استخدام أي طرق احتيالية أو مضللة لجذب العملاء.</li>
+                                <li>يجب الالتزام بجميع القوانين واللوائح المحلية المتعلقة بالتسويق والإعلان.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="affiliate-terms-card">
+                            <h4>سياسة العمولات</h4>
+                            <ul class="affiliate-terms-list">
+                                <li>نسبة العمولة هي 10% من قيمة استثمار العميل المُحال.</li>
+                                <li>يتم احتساب العمولة فقط على الاستثمارات التي تتم من خلال رابط الإحالة الخاص بك.</li>
+                                <li>يتم إضافة العمولات إلى حسابك فور إتمام عملية الاستثمار من العميل المُحال.</li>
+                                <li>الحد الأدنى لسحب العمولات هو 50 دولار أمريكي.</li>
+                                <li>يمكن سحب العمولات عبر نفس طرق الدفع المتاحة في المنصة.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="affiliate-terms-card">
+                            <h4>الممارسات المحظورة</h4>
+                            <ul class="affiliate-terms-list">
+                                <li>استخدام البريد الإلكتروني المزعج (Spam) لنشر روابط الإحالة.</li>
+                                <li>نشر روابط الإحالة في مواقع ذات محتوى مخالف للآداب العامة.</li>
+                                <li>استخدام أساليب احتيالية لزيادة عدد النقرات على روابط الإحالة.</li>
+                                <li>انتحال صفة نورسينا أو الادعاء بتمثيل الشركة رسمياً.</li>
+                                <li>استخدام أي محتوى يخالف حقوق الملكية الفكرية للشركة.</li>
+                                <li>إنشاء حسابات وهمية للحصول على عمولات بطرق غير مشروعة.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- العمود الأول - كما هو -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-about">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="footer-logo">
+                        </a>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني - روابط سريعة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="affiliate.html">التسويق بالعمولة</a></li>
+                        <li><a href="investment-plans.html">باقات الاستثمار</a></li>
+                        <li><a href="payment-methods.html">طرق الدفع</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الثالث - الدعم والمساعدة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">الدعم والمساعدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الرابع - معاملات مالية -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">معاملات مالية</h4>
+                    <ul class="footer-links">
+                        <li><a href="top-investors.html">أفضل المستثمرين</a></li>
+                        <li><a href="latest-withdrawals.html">أخر عمليات السحب</a></li>
+                        <li><a href="latest-deposits.html">أخر عمليات الإيداع</a></li>
+                        <li><a href="latest-referrals.html">أخر عمليات الإحالة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الخامس - اتصل بنا -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span dir="ltr">18 Shacklewell Lane, London, England, E8 2EZ</span></li>
+                        <li><i class="fas fa-envelope"></i> info@noorsena.com</li>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+44 7366 499 420</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">© 2025 نورسينا للاستثمار المالي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

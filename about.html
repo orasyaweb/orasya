@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - نورسينا للاستثمار المالي</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- البريلودر -->
+    <div class="preloader">
+        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">جاري التحميل...</div>
+        <div class="preloader-progress">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- رأس السايد بار للشاشات الصغيرة -->
+                <div class="sidebar-header d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+                    </a>
+                    <div class="sidebar-close" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-dropdown" href="javascript:void(0);" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">عن الشركة <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="affiliate.html">التسويق بالعمولة</a></li>
+                            <li><a class="dropdown-item" href="contract.html">عقد الاستثمار</a></li>
+                            <li><a class="dropdown-item" href="license.html">ترخيص الشركة</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">أراء العملاء</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-to-start.html">كيف أبدأ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investment-plans.html">باقات الإستثمار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment-methods.html">طرق الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">أسئلة شائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-gold-outline me-2">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-gold">إنشاء حساب</a>
+                </div>
+            </div>
+            <!-- طبقة التظليل للسايد بار -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </div>
+    </nav>
+
+    <!-- بانر الصفحة -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>من نحن</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">من نحن</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المقدمة الرئيسية -->
+    <section class="section about-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- القسم النصي -->
+                <div class="col-lg-6">
+                    <div class="about-hero-content">
+                        <div class="section-heading">
+                            <h6 class="sub-heading">من نحن</h6>
+                            <h2 class="section-title">نورسينا للاستثمار المالي</h2>
+                        </div>
+                        
+                        <div class="about-hero-description">
+                            <p>تأسست شركة نورسينا في لندن عام 2025 (سجل تجاري: 16547721) برؤية واضحة: تحويل عالم الاستثمار إلى تجربة سلسة وآمنة للجميع. نحن نؤمن بأن الفرص الاستثمارية يجب أن تكون متاحة لكل شخص يتطلع لتنمية ثروته، بغض النظر عن خبرته أو رأس ماله الابتدائي.</p>
+
+                            <p>انطلقنا بفريق نخبوي يجمع بين الخبرة المالية العميقة والكفاءة التقنية العالية، واليوم أصبحنا منصة موثوقة يعتمد عليها آلاف المستثمرين في العالم العربي. نقدم استراتيجيات استثمارية متطورة مصممة خصيصاً لتلبية تطلعات المستثمر العربي، مع التركيز على تحقيق عوائد مستدامة وآمنة.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- القسم الصوري -->
+                <div class="col-lg-6">
+                    <div class="about-hero-image text-center">
+                        <img src="https://img.freepik.com/premium-photo/stock-market-forex-trading-graph_73426-191.jpg" alt="نورسينا للاستثمار المالي - استثمارات آمنة" class="img-fluid rounded shadow about-main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم ما نؤمن به -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">ما نؤمن به</h6>
+                <h2 class="section-title">قيمنا ومبادئنا الأساسية</h2>
+                <p class="section-description">نسعى لبناء مستقبل استثماري آمن ومستدام، نجمع فيه بين الابتكار التقني والخبرة المالية لنقدم تجربة استثمارية فريدة تناسب تطلعاتكم</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- رؤيتنا -->
+                <div class="col-lg-4 mb-4">
+                    <div class="values-card-horizontal">
+                        <div class="values-card-header">
+                            <div class="values-card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>رؤيتنا</h4>
+                        </div>
+                        <div class="values-card-content">
+                            <p>أن نكون المنصة الرائدة في مجال الاستثمار الرقمي في الشرق الأوسط، ونقدم حلولاً مبتكرة تمكّن الجميع من تحقيق الاستقلال المالي.</p>
+                            <div class="values-card-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>نرى مستقبلاً يتاح فيه الاستثمار للجميع</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- رسالتنا -->
+                <div class="col-lg-4 mb-4">
+                    <div class="values-card-horizontal">
+                        <div class="values-card-header">
+                            <div class="values-card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>رسالتنا</h4>
+                        </div>
+                        <div class="values-card-content">
+                            <p>توفير منصة استثمارية آمنة وشفافة تتيح للمستثمرين من مختلف المستويات تحقيق عوائد مالية مستدامة من خلال باقات استثمارية متنوعة.</p>
+                            <div class="values-card-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>نلتزم بالشفافية والأمان في كل خطوة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- قيمنا -->
+                <div class="col-lg-4 mb-4">
+                    <div class="values-card-horizontal">
+                        <div class="values-card-header">
+                            <div class="values-card-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>قيمنا</h4>
+                        </div>
+                        <div class="values-card-content">
+                            <p>نؤمن بالنزاهة والشفافية والابتكار المستمر، ونضع مصلحة عملائنا في المقام الأول في كل ما نقوم به.</p>
+                            <div class="values-card-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>نعمل بشغف لتحقيق أهداف عملائنا</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم مميزات الاستثمار -->
+    <section class="section features-about-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">مميزات الاستثمار</h6>
+                <h2 class="section-title">لماذا نورسينا خيارك الأمثل</h2>
+                <p class="section-description">نجمع بين الخبرة المالية والتقنية المتطورة لنقدم لك تجربة استثمارية متكاملة تضمن نمو استثماراتك في بيئة آمنة وموثوقة</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- المميزة 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-about-card">
+                        <div class="feature-about-header">
+                            <div class="feature-about-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h4>إدارة استثمارية متكاملة</h4>
+                        </div>
+                        <div class="feature-about-content">
+                            <p>كل ما عليك فعله هو الاشتراك في إحدى باقاتنا الاستثمارية المتنوعة، ويتولى فريق الخبراء لدينا إدارة استثماراتك بكفاءة عالية وفق استراتيجيات مدروسة.</p>
+                            <div class="feature-about-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>خبراء ماليون متخصصون</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المميزة 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-about-card">
+                        <div class="feature-about-header">
+                            <div class="feature-about-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>ضمان سلامة رأس المال</h4>
+                        </div>
+                        <div class="feature-about-content">
+                            <p>في نورسينا، نلتزم بحماية رأس مالك بشكل كامل. نحن نتحمل مسؤولية إدارة المخاطر الاستثمارية بالكامل ونضمن عدم تعرض رأس مالك الأساسي لأي نقصان. استثمر معنا بثقة تامة وراحة بال.</p>
+                            <div class="feature-about-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>رأس مالك محمي بالكامل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المميزة 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-about-card">
+                        <div class="feature-about-header">
+                            <div class="feature-about-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h4>التزامنا بالعوائد المالية</h4>
+                        </div>
+                        <div class="feature-about-content">
+                            <p>نلتزم بتحصيل ودفع العوائد المالية المستحقة بانتظام وفق الباقة الاستثمارية التي تختارها. نوفر لك تقارير دورية شفافة توضح أداء استثماراتك والعوائد المتحققة.</p>
+                            <div class="feature-about-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>مدفوعات منتظمة وموثوقة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم مجالات الاستثمار -->
+    <section class="section investment-areas-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">استثمارات متنوعة</h6>
+                <h2 class="section-title">مجالات الاستثمار</h2>
+                <p class="section-description">نوظف خبرتنا في اختيار أفضل الفرص الاستثمارية عبر قطاعات متعددة، مما يضمن تنويع المخاطر وتحقيق عوائد مستدامة على المدى الطويل</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- المجال 1 -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="investment-area-card">
+                        <div class="investment-area-header">
+                            <div class="investment-area-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>العقارات</h4>
+                        </div>
+                        <div class="investment-area-content">
+                            <p>نستثمر في مشاريع عقارية مختارة بعناية في مواقع استراتيجية ذات إمكانات نمو عالية، من المجمعات السكنية إلى المشاريع التجارية المتميزة.</p>
+                            <div class="investment-benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>استقرار وعوائد طويلة الأجل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المجال 2 -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="investment-area-card">
+                        <div class="investment-area-header">
+                            <div class="investment-area-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>الأسهم</h4>
+                        </div>
+                        <div class="investment-area-content">
+                            <p>محفظة متوازنة من الأسهم في شركات راسخة وواعدة، مع التركيز على القطاعات ذات النمو المستدام والتوزيعات المنتظمة للأرباح.</p>
+                            <div class="investment-benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>تنويع وتوازن استثماري</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المجال 3 -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="investment-area-card">
+                        <div class="investment-area-header">
+                            <div class="investment-area-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>النقل البري والبحري</h4>
+                        </div>
+                        <div class="investment-area-content">
+                            <p>استثمارات في أسطول متنوع من وسائل النقل البري والبحري، مما يوفر تدفقات نقدية مستقرة من خلال عقود طويلة الأجل مع شركات رائدة.</p>
+                            <div class="investment-benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>عوائد مستقرة وتدفقات نقدية منتظمة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المجال 4 -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="investment-area-card">
+                        <div class="investment-area-header">
+                            <div class="investment-area-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h4>العملات الرقمية</h4>
+                        </div>
+                        <div class="investment-area-content">
+                            <p>استراتيجية متحفظة ومدروسة للاستثمار في العملات الرقمية الرئيسية والمشاريع الواعدة، مع تطبيق أعلى معايير إدارة المخاطر لحماية رأس المال.</p>
+                            <div class="investment-benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>نمو مع حماية رأس المال</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم فريق العمل -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">فريق العمل</h6>
+                <h2 class="section-title">الخبراء والكفاءات</h2>
+                <p class="section-description">نجمع نخبة من الكفاءات المتخصصة في مجالات الاستثمار والتكنولوجيا المالية، يعملون معاً لتقديم تجربة استثمارية متكاملة وفريدة</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- العضو 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face&auto=format&q=80" alt="عبدالله المنصور" class="team-avatar">
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">عبدالله المنصور</h4>
+                            <div class="team-position">الرئيس التنفيذي</div>
+                            <p class="team-description">خبير مالي دولي مع 20 عاماً من الخبرة في إدارة الاستثمارات وتطوير الحلول المالية المبتكرة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العضو 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face&auto=format&q=80" alt="ريم السليمان" class="team-avatar">
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">ريم السليمان</h4>
+                            <div class="team-position">مديرة الاستثمارات</div>
+                            <p class="team-description">حاصلة على شهادة CFA مع خبرة 15 عاماً في تطوير وإدارة المحافظ الاستثمارية العالمية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العضو 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face&auto=format&q=80" alt="فيصل العتيبي" class="team-avatar">
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">فيصل العتيبي</h4>
+                            <div class="team-position">رئيس التكنولوجيا</div>
+                            <p class="team-description">خبير في أمن المعلومات وتطوير المنصات المالية مع خبرة 12 عاماً في كبرى شركات التقنية العالمية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العضو 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face&auto=format&q=80" alt="منى الغامدي" class="team-avatar">
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">منى الغامدي</h4>
+                            <div class="team-position">مديرة تجربة العملاء</div>
+                            <p class="team-description">متخصصة في تطوير تجربة المستخدم وإدارة علاقات العملاء مع خبرة 10 سنوات في القطاع المالي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الإنجازات بالأرقام -->
+    <section class="section achievements-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">نتائج ملموسة</h6>
+                <h2 class="section-title">إنجازاتنا بالأرقام</h2>
+                <p class="section-description">نفخر بما حققناه من نجاحات خلال مسيرتنا، وتعكس هذه الأرقام ثقة عملائنا وجودة خدماتنا الاستثمارية</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- الإنجاز 1 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="achievement-number" data-counter="1000">0</div>
+                        <p class="achievement-text">إجمالي العملاء</p>
+                    </div>
+                </div>
+                
+                <!-- الإنجاز 2 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="achievement-number" data-counter="45365000">$0</div>
+                        <p class="achievement-text">إجمالي الإيداعات</p>
+                    </div>
+                </div>
+                
+                <!-- الإنجاز 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="achievement-number" data-counter="25125000">$0</div>
+                        <p class="achievement-text">إجمالي المدفوعات</p>
+                    </div>
+                </div>
+                
+                <!-- الإنجاز 4 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="achievement-card">
+                        <div class="achievement-number" data-counter="15">0</div>
+                        <p class="achievement-text">أيام التشغيل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الأمان والشفافية -->
+    <section class="section features-about-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h6 class="sub-heading">الأمان والشفافية</h6>
+                <h2 class="section-title">نلتزم بأعلى المعايير</h2>
+                <p class="section-description">نحن ملتزمون بتطبيق أعلى معايير الأمان والشفافية والامتثال العالمية لضمان حماية استثماراتك وبياناتك الشخصية</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- معيار 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-about-card">
+                        <div class="feature-about-header">
+                            <div class="feature-about-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>أمن المعلومات والبيانات</h4>
+                        </div>
+                        <div class="feature-about-content">
+                            <p>نطبق أعلى معايير أمن المعلومات وفق شهادة ISO 27001 لضمان حماية بيانات عملائنا من أي تهديدات محتملة في بيئة آمنة ومشفرة</p>
+                            <div class="feature-about-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>معايير ISO 27001 العالمية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- معيار 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-about-card">
+                        <div class="feature-about-header">
+                            <div class="feature-about-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>أمان المعاملات المالية</h4>
+                        </div>
+                        <div class="feature-about-content">
+                            <p>نستخدم أحدث تقنيات التشفير وأنظمة الدفع الآمنة المتوافقة مع معايير PCI DSS لحماية معاملاتك المالية من أي اختراقات أو تهديدات</p>
+                            <div class="feature-about-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>تشفير SSL متقدم لكل المعاملات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- معيار 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-about-card">
+                        <div class="feature-about-header">
+                            <div class="feature-about-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4>الامتثال التنظيمي</h4>
+                        </div>
+                        <div class="feature-about-content">
+                            <p>نلتزم بجميع القوانين واللوائح المالية المحلية والدولية، ونطبق إجراءات KYC/AML لمكافحة غسيل الأموال ونضمن امتثال كامل للتشريعات</p>
+                            <div class="feature-about-footer">
+                                <i class="fas fa-check-circle"></i>
+                                <span>إجراءات KYC لضمان الشفافية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- العمود الأول - كما هو -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-about">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="footer-logo">
+                        </a>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني - روابط سريعة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="affiliate.html">التسويق بالعمولة</a></li>
+                        <li><a href="investment-plans.html">باقات الاستثمار</a></li>
+                        <li><a href="payment-methods.html">طرق الدفع</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الثالث - الدعم والمساعدة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">الدعم والمساعدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الرابع - معاملات مالية -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">معاملات مالية</h4>
+                    <ul class="footer-links">
+                        <li><a href="top-investors.html">أفضل المستثمرين</a></li>
+                        <li><a href="latest-withdrawals.html">أخر عمليات السحب</a></li>
+                        <li><a href="latest-deposits.html">أخر عمليات الإيداع</a></li>
+                        <li><a href="latest-referrals.html">أخر عمليات الإحالة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الخامس - اتصل بنا -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span dir="ltr">18 Shacklewell Lane, London, England, E8 2EZ</span></li>
+                        <li><i class="fas fa-envelope"></i> info@noorsena.com</li>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+44 7366 499 420</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">© 2025 نورسينا للاستثمار المالي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Counters Animation JS -->
+    <script src="assets/js/counters.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

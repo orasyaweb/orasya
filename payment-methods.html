@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طرق الدفع - نورسينا للاستثمار المالي</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- البريلودر -->
+    <div class="preloader">
+        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">جاري التحميل...</div>
+        <div class="preloader-progress">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- رأس السايد بار للشاشات الصغيرة -->
+                <div class="sidebar-header d-lg-none">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="logo">
+                    </a>
+                    <div class="sidebar-close" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link custom-dropdown" href="javascript:void(0);" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">عن الشركة <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">من نحن</a></li>
+                            <li><a class="dropdown-item" href="affiliate.html">التسويق بالعمولة</a></li>
+                            <li><a class="dropdown-item" href="contract.html">عقد الاستثمار</a></li>
+                            <li><a class="dropdown-item" href="license.html">ترخيص الشركة</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">أراء العملاء</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-to-start.html">كيف أبدأ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investment-plans.html">باقات الإستثمار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="payment-methods.html">طرق الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">أسئلة شائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-gold-outline me-2">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-gold">إنشاء حساب</a>
+                </div>
+            </div>
+            <!-- طبقة التظليل للسايد بار -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </div>
+    </nav>
+
+    <!-- بانر الصفحة -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-banner-content">
+                        <h1>طرق الدفع</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">طرق الدفع</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم طرق الدفع المفصلة -->
+    <section class="section bg-white payment-methods-page">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h6 class="sub-heading">اختر الطريقة المناسبة</h6>
+                <h2 class="section-title">طرق الدفع المدعومة</h2>
+            </div>
+
+            <!-- Payeer -->
+            <div class="container-fluid px-0 mb-5">
+                <div class="row align-items-center p-4 bg-white rounded shadow-sm mx-0">
+                <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="text-center">
+                        <div class="pay-icon payeer-icon d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                            <i class="fas fa-wallet fa-3x"></i>
+                        </div>
+                        <h4 class="fw-bold pay-title">Payeer</h4>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="fw-bold mb-3 pay-subtitle">محفظة Payeer الإلكترونية</h5>
+                    <p class="text-muted mb-4">محفظة إلكترونية عالمية تدعم العديد من العملات وتوفر معاملات سريعة وآمنة لجميع المستخدمين حول العالم</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>معالجة فورية للمعاملات</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>رسوم منخفضة جداً</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>حماية متقدمة للحساب</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>دعم العملات المتعددة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للإيداع:</small>
+                                <strong>$100</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للسحب:</small>
+                                <strong>$20</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">وقت المعالجة:</small>
+                                <strong>فوري</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- USDT TRC20 -->
+            <div class="container-fluid px-0 mb-5">
+                <div class="row align-items-center p-4 bg-white rounded shadow-sm mx-0">
+                <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="text-center">
+                        <div class="pay-icon usdt-icon d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                            <i class="fab fa-btc fa-3x"></i>
+                        </div>
+                        <h4 class="fw-bold pay-title">USDT TRC20</h4>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="fw-bold mb-3 pay-subtitle">عملة USDT على شبكة TRON</h5>
+                    <p class="text-muted mb-4">عملة مستقرة مرتبطة بالدولار الأمريكي مع رسوم منخفضة وسرعة عالية في التحويل عبر شبكة TRON</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>رسوم تحويل منخفضة جداً</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>سرعة عالية في التحويل</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>عملة مستقرة آمنة</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>متوفرة على معظم المنصات</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للإيداع:</small>
+                                <strong>$100</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للسحب:</small>
+                                <strong>$20</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">وقت المعالجة:</small>
+                                <strong>5-15 دقيقة</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- فودافون كاش -->
+            <div class="container-fluid px-0 mb-5">
+                <div class="row align-items-center p-4 bg-white rounded shadow-sm mx-0">
+                <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="text-center">
+                        <div class="pay-icon vodafone-icon d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                            <i class="fas fa-mobile-alt fa-3x"></i>
+                        </div>
+                        <h4 class="fw-bold pay-title">فودافون كاش</h4>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="fw-bold mb-3 pay-subtitle">خدمة الدفع الإلكتروني من فودافون</h5>
+                    <p class="text-muted mb-4">خدمة دفع محلية سهلة وآمنة للمستخدمين في مصر مع إمكانية التحويل المباشر والسريع</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>سهولة في الاستخدام</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>متاح للمستخدمين المحليين</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>تحويل مباشر بالجنيه المصري</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>دعم فني محلي</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للإيداع:</small>
+                                <strong>3,000 ج.م</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للسحب:</small>
+                                <strong>600 ج.م</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">وقت المعالجة:</small>
+                                <strong>10-30 دقيقة</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- تحويل بنكي -->
+            <div class="container-fluid px-0 mb-5">
+                <div class="row align-items-center p-4 bg-white rounded shadow-sm mx-0">
+                <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="text-center">
+                        <div class="pay-icon bank-icon d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                            <i class="fas fa-university fa-3x"></i>
+                        </div>
+                        <h4 class="fw-bold pay-title">تحويل بنكي</h4>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="fw-bold mb-3 pay-subtitle">التحويل المصرفي التقليدي</h5>
+                    <p class="text-muted mb-4">طريقة دفع آمنة ومعترف بها دولياً مع إمكانية التحويل من أي بنك محلي أو دولي</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>أمان عالي ومضمون</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>مقبول في جميع أنحاء العالم</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>تتبع كامل للمعاملة</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>دعم العملات المختلفة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للإيداع:</small>
+                                <strong>$500</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للسحب:</small>
+                                <strong>$100</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">وقت المعالجة:</small>
+                                <strong>1-3 أيام عمل</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- البريد المصري -->
+            <div class="container-fluid px-0 mb-5">
+                <div class="row align-items-center p-4 bg-white rounded shadow-sm mx-0">
+                <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="text-center">
+                        <div class="pay-icon post-icon d-inline-flex align-items-center justify-content-center rounded-circle mb-3">
+                            <i class="fas fa-mail-bulk fa-3x"></i>
+                        </div>
+                        <h4 class="fw-bold pay-title">البريد المصري</h4>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h5 class="fw-bold mb-3 pay-subtitle">خدمة التحويل عبر البريد المصري</h5>
+                    <p class="text-muted mb-4">خدمة تحويل محلية موثوقة ومتاحة في جميع أنحاء مصر مع شبكة واسعة من المكاتب</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>شبكة واسعة من المكاتب</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>خدمة محلية موثوقة</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>رسوم منخفضة</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-2 pay-feature">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>سهولة في الوصول</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للإيداع:</small>
+                                <strong>3,000 ج.م</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">الحد الأدنى للسحب:</small>
+                                <strong>600 ج.م</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="bg-light p-3 rounded pay-info">
+                                <small class="text-muted d-block">وقت المعالجة:</small>
+                                <strong>2-6 ساعات</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- العمود الأول - كما هو -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-about">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="footer-logo">
+                        </a>
+                        <p>منصة استثمارية رائدة تقدم لك فرصًا استثمارية آمنة بعوائد يومية مضمونة</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- العمود الثاني - روابط سريعة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="affiliate.html">التسويق بالعمولة</a></li>
+                        <li><a href="investment-plans.html">باقات الاستثمار</a></li>
+                        <li><a href="payment-methods.html">طرق الدفع</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الثالث - الدعم والمساعدة -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">الدعم والمساعدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الرابع - معاملات مالية -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h4 class="footer-heading">معاملات مالية</h4>
+                    <ul class="footer-links">
+                        <li><a href="top-investors.html">أفضل المستثمرين</a></li>
+                        <li><a href="latest-withdrawals.html">أخر عمليات السحب</a></li>
+                        <li><a href="latest-deposits.html">أخر عمليات الإيداع</a></li>
+                        <li><a href="latest-referrals.html">أخر عمليات الإحالة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- العمود الخامس - اتصل بنا -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span dir="ltr">18 Shacklewell Lane, London, England, E8 2EZ</span></li>
+                        <li><i class="fas fa-envelope"></i> info@noorsena.com</li>
+                        <li><i class="fas fa-phone"></i> <span dir="ltr">+44 7366 499 420</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">© 2025 نورسينا للاستثمار المالي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
