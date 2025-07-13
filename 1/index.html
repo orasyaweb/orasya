@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - نورسينا للاستثمار المالي</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+        <!-- البريلودر -->
+        <div class="preloader">
+            <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text">جاري التحميل...</div>
+            <div class="preloader-progress">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+
+    <!-- لوحة التحكم الرئيسية -->
+    <div class="dashboard-wrapper">
+        <!-- الشريط الجانبي -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo.png" alt="نورسينا للاستثمار المالي" class="sidebar-logo">
+                <button class="sidebar-toggle d-lg-none" id="sidebarToggle">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <!-- القائمة الرئيسية -->
+                <nav class="sidebar-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <i class="fas fa-tachometer-alt nav-icon"></i>
+                                <span class="nav-text">لوحة التحكم</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="deposit.html" class="nav-link">
+                                <i class="fas fa-plus-circle nav-icon"></i>
+                                <span class="nav-text">إيداع الرصيد</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="new-investment.html" class="nav-link">
+                                <i class="fas fa-chart-line nav-icon"></i>
+                                <span class="nav-text">استثمار جديد</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="active-investments.html" class="nav-link">
+                                <i class="fas fa-briefcase nav-icon"></i>
+                                <span class="nav-text">الاستثمارات النشطة</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="withdraw.html" class="nav-link">
+                                <i class="fas fa-money-bill-wave nav-icon"></i>
+                                <span class="nav-text">سحب الأرباح</span>
+                            </a>
+                        </li>
+                        
+                        <!-- سجل المعاملات -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#transactionsMenu">
+                                <i class="fas fa-list-alt nav-icon"></i>
+                                <span class="nav-text">سجل المعاملات</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="collapse nav-submenu" id="transactionsMenu">
+                                <li><a href="transactions.html" class="nav-link submenu-link">جميع المعاملات</a></li>
+                                <li><a href="deposit-transactions.html" class="nav-link submenu-link">معاملات الإيداع</a></li>
+                                <li><a href="withdraw-transactions.html" class="nav-link submenu-link">معاملات السحب</a></li>
+                                <li><a href="referral-transactions.html" class="nav-link submenu-link">معاملات الإحالة</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="referrals.html" class="nav-link">
+                                <i class="fas fa-users nav-icon"></i>
+                                <span class="nav-text">الإحالات</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="review.html" class="nav-link">
+                                <i class="fas fa-star nav-icon"></i>
+                                <span class="nav-text">إضافة مراجعة</span>
+                            </a>
+                        </li>
+                                                
+                        <!-- الدعم الفني -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#supportMenu">
+                                <i class="fas fa-headset nav-icon"></i>
+                                <span class="nav-text">الدعم الفني</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="collapse nav-submenu" id="supportMenu">
+                                <li><a href="new-ticket.html" class="nav-link submenu-link">فتح تذكرة جديدة</a></li>
+                                <li><a href="tickets.html" class="nav-link submenu-link">التذاكر المفتوحة</a></li>
+                                <li><a href="faq.html" class="nav-link submenu-link">الأسئلة الشائعة</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- إعدادات الحساب -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#accountMenu">
+                                <i class="fas fa-user-cog nav-icon"></i>
+                                <span class="nav-text">إعدادات الحساب</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="collapse nav-submenu" id="accountMenu">
+                                <li><a href="profile.html" class="nav-link submenu-link">الملف الشخصي</a></li>
+                                <li><a href="wallets.html" class="nav-link submenu-link">إعداد محافظ السحب</a></li>
+                                <li><a href="security.html" class="nav-link submenu-link">تأمين الحساب</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link logout-link">
+                                <i class="fas fa-sign-out-alt nav-icon"></i>
+                                <span class="nav-text">تسجيل الخروج</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- المحتوى الرئيسي -->
+        <div class="main-content">
+            <!-- الشريط العلوي -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle d-lg-none" id="mobileSidebarToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h4 class="page-title">لوحة التحكم</h4>
+                </div>
+                
+                <div class="header-right">
+                    <div class="header-user dropdown">
+                        <a href="#" class="d-flex align-items-center text-decoration-none gap-3" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <div class="user-avatar-header">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="user-info-header">
+                                <div class="user-name-container">
+                                    <span class="user-name">أحمد محمد</span>
+                                    <i class="fas fa-chevron-down user-dropdown-arrow"></i>
+                                </div>
+                                <span class="user-greeting">NC521428789</span>
+                            </div>
+                        </a>
+                        
+                        <!-- قائمة المستخدم المنسدلة -->
+                        <ul class="dropdown-menu user-dropdown-menu dropdown-menu-start">
+                            <li class="user-info-item">
+                                <strong>أحمد محمد</strong>
+                                <small>test10@noorsena.com</small>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> إعداد الملف الشخصي</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-key"></i> تغيير كلمة المرور</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-wallet"></i> إعداد محافظ السحب</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item logout-item" href="../index.html"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- طبقة التظليل للموبايل -->
+            <div class="mobile-overlay" id="mobileOverlay"></div>
+            
+            <!-- محتوى الصفحة الرئيسية -->
+            <div class="dashboard-content">
+                <!-- قسم الإحصائيات -->
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">نظرة عامة على حسابك</h2>
+                    </div>
+                    <div class="stats-cards-container">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="stats-card primary-card">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                    <div class="stats-info">
+                                        <h3 class="stats-value">$15,890</h3>
+                                        <p class="stats-label">الرصيد الحالي</p>
+                                    </div>
+                                    <div class="stats-change positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>5.3%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="stats-card secondary-card">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="stats-info">
+                                        <h3 class="stats-value">$4,325</h3>
+                                        <p class="stats-label">الأرباح الشهرية</p>
+                                    </div>
+                                    <div class="stats-change positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>8.2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="stats-card accent-card">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <div class="stats-info">
+                                        <h3 class="stats-value">$32,450</h3>
+                                        <p class="stats-label">إجمالي الاستثمارات</p>
+                                    </div>
+                                    <div class="stats-change neutral">
+                                        <i class="fas fa-minus"></i>
+                                        <span>0.5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="stats-card light-card">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                    <div class="stats-info">
+                                        <h3 class="stats-value">$8,120</h3>
+                                        <p class="stats-label">عمليات السحب</p>
+                                    </div>
+                                    <div class="stats-change negative">
+                                        <i class="fas fa-arrow-down"></i>
+                                        <span>2.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- قسم الرسوم البيانية -->
+                <div class="content-section">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">تحليل الأرباح والخسائر</h3>
+                                    <div class="card-actions">
+                                        <select class="form-select form-select-sm">
+                                            <option selected>آخر 30 يوم</option>
+                                            <option>آخر 3 شهور</option>
+                                            <option>آخر 6 شهور</option>
+                                            <option>سنة كاملة</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <canvas id="profitLossChart" height="250"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">توزيع المحفظة</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <canvas id="portfolioChart" height="250"></canvas>
+                                    </div>
+                                    <div class="chart-legend">
+                                        <div class="legend-item">
+                                            <span class="legend-color" style="background-color: rgba(200, 150, 43, 0.8);"></span>
+                                            <span class="legend-label">الأسهم (45%)</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <span class="legend-color" style="background-color: rgba(77, 119, 255, 0.8);"></span>
+                                            <span class="legend-label">العملات الرقمية (30%)</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <span class="legend-color" style="background-color: rgba(56, 188, 139, 0.8);"></span>
+                                            <span class="legend-label">العقارات (15%)</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <span class="legend-color" style="background-color: rgba(240, 125, 110, 0.8);"></span>
+                                            <span class="legend-label">السلع (10%)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- قسم المعاملات الأخيرة -->
+                <div class="content-section">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">المعاملات الأخيرة</h3>
+                                    <div class="card-actions">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">عرض الكل</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table transactions-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>رقم العملية</th>
+                                                    <th>النوع</th>
+                                                    <th>التاريخ</th>
+                                                    <th>المبلغ</th>
+                                                    <th>الحالة</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>#TRX-7895</td>
+                                                    <td><span class="transaction-type deposit">إيداع</span></td>
+                                                    <td>12 يوليو 2025</td>
+                                                    <td class="amount positive">$1,200</td>
+                                                    <td><span class="status-badge completed">مكتمل</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#TRX-7894</td>
+                                                    <td><span class="transaction-type withdrawal">سحب</span></td>
+                                                    <td>10 يوليو 2025</td>
+                                                    <td class="amount negative">$850</td>
+                                                    <td><span class="status-badge completed">مكتمل</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#TRX-7893</td>
+                                                    <td><span class="transaction-type investment">استثمار</span></td>
+                                                    <td>8 يوليو 2025</td>
+                                                    <td class="amount neutral">$2,500</td>
+                                                    <td><span class="status-badge processing">قيد التنفيذ</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#TRX-7892</td>
+                                                    <td><span class="transaction-type profit">أرباح</span></td>
+                                                    <td>5 يوليو 2025</td>
+                                                    <td class="amount positive">$320</td>
+                                                    <td><span class="status-badge completed">مكتمل</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#TRX-7891</td>
+                                                    <td><span class="transaction-type deposit">إيداع</span></td>
+                                                    <td>2 يوليو 2025</td>
+                                                    <td class="amount positive">$1,500</td>
+                                                    <td><span class="status-badge completed">مكتمل</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- قسم الإشعارات والرسائل -->
+                        <div class="col-lg-4">
+                            <div class="dashboard-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">آخر الإشعارات</h3>
+                                    <div class="card-actions">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">عرض الكل</a>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="notifications-list">
+                                        <div class="notification-item unread">
+                                            <div class="notification-icon success">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p class="notification-text">تم إتمام عملية الإيداع بنجاح</p>
+                                                <span class="notification-time">منذ ساعتين</span>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item unread">
+                                            <div class="notification-icon primary">
+                                                <i class="fas fa-chart-pie"></i>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p class="notification-text">تم تحديث حالة استثمارك</p>
+                                                <span class="notification-time">منذ 5 ساعات</span>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item">
+                                            <div class="notification-icon warning">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p class="notification-text">تنبيه: تغيير في قيمة العملات الرقمية</p>
+                                                <span class="notification-time">منذ يوم</span>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item">
+                                            <div class="notification-icon info">
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p class="notification-text">فرص استثمارية جديدة متاحة</p>
+                                                <span class="notification-time">منذ 3 أيام</span>
+                                            </div>
+                                        </div>
+                                        <div class="notification-item">
+                                            <div class="notification-icon danger">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </div>
+                                            <div class="notification-content">
+                                                <p class="notification-text">تم تسجيل الدخول من جهاز جديد</p>
+                                                <span class="notification-time">منذ 5 أيام</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- نهاية .main-content -->
+    </div> <!-- نهاية .dashboard-wrapper -->
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Preloader JS -->
+    <script src="assets/js/preloader.js"></script>
+    <!-- Dashboard JS -->
+    <script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>
